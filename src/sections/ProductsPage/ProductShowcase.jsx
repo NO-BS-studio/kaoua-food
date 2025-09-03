@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import Navbar from "../../components/Navbar";
 
 const products = [
   {
@@ -216,40 +217,5 @@ export default function ProductShowcase() {
   );
 }
 
-function Navbar() {
-  return (
-    <div className="flex items-center md:justify-between justify-around w-full mb-10 ">
-      <img src="/logos/kaoua_logo.png" alt="Logo" className="h-12" />
-      <nav className="md:flex hidden gap-10 text-white text-sm backdrop-blur-sm bg-white/10 px-10 py-2 rounded-full">
-        <a href="/complexe">COMPLEXE</a>
-        <a href="/produits">NOS PRODUITS</a>
-        <a href="/fournisseurs">FOURNISSEURS</a>
-        <a href="/contact">CONTACT</a>
-      </nav>
-      <div className="md:flex hidden gap-4">
-        <FlagButton code="fr" />
-        <FlagButton code="en" />
-      </div>
-    </div>
-  );
-}
 
-function FlagButton({ code }) {
-  const { t, i18n } = useTranslation();
 
-  return (
-    <button
-      className="w-[3vw] h-[3vw] rounded-full overflow-hidden border border-white"
-      title={code.toUpperCase()}
-      onClick={() => {
-        i18n.changeLanguage(code);
-      }}
-    >
-      <img
-        src={`/flags/${code}.png`}
-        alt={code}
-        className="w-full h-full object-cover"
-      />
-    </button>
-  );
-}

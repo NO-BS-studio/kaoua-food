@@ -1,0 +1,29 @@
+[
+  {
+    "id": 12,
+    "name": "USINE BLIDA #12",
+    "category": "Biscuits et confiseries",
+    "address": "22 Rue Metidji, Blida",
+    "phone": "+21 13 13 13 13",
+    "email": "contact@kaoua12.com",
+    "image": "/images/map.png"
+  },
+  {
+    "id": 14,
+    "name": "USINE ALGER #14",
+    "category": "Chocolaterie",
+    "address": "10 Rue Emir Abdelkader, Alger",
+    "phone": "+21 11 11 11 11",
+    "email": "contact@kaoua14.com",
+    "image": "/images/map.png"
+  },
+  {
+    "id": 21,
+    "name": "USINE ORAN #21",
+    "category": "Snacks et Gaufrettes",
+    "address": "45 Rue Ibn Sina, Oran",
+    "phone": "+21 22 22 22 22",
+    "email": "contact@kaoua21.com",
+    "image": "/images/map.png"
+  }
+]

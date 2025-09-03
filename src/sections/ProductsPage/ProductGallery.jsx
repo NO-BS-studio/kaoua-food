@@ -201,7 +201,7 @@ export default function ProductGallery({ products }) {
 
       <div className="mb-8">
         <h2 className="text-4xl md:text-[2.5vw] font-black text-black w-1/2 pb-5">NOS GARANTIES</h2>
-        <h2 className="text-sm md:text-[1.2vw] leading-[2vw]  text-black">
+        <h2 className="text-sm md:text-[1.2vw] md:leading-[2vw]  text-black">
           Notre collection large de produits super sympas qui sont super bons à manger et ouais c’est incroyable... Vous me croyez pas? Testez vous-meme !
         </h2>
       </div>

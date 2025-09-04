@@ -1,15 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html{
-  /* overflow-x : hidden; */
-  margin: 0,0,0,0;
-
+:root {
+font-family: leggib; 
 }
-body{
+
+html {
+  /* overflow-x : hidden; */
+  margin: 0, 0, 0, 0;
+}
+body {
   margin: 0;
 }
-*{
+* {
   overflow: visible;
+}
+
+@theme {
+  --font-leggib: leggib;
+}
+
+@font-face {
+  font-family: "leggib";
+
+  font-weight: normal;
+  font-style: normal;
+  src: url("../public/fonts/Leggibilmente-MediumRoman.otf") format("truetype");
+}
+@font-face {
+  font-family: "leggib";
+
+  font-weight: bold;
+  font-style: normal;
+  src: url("../public/fonts/Leggibilmente-BoldRoman.otf") format("truetype");
 }

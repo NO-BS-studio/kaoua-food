@@ -23,8 +23,8 @@ export default function Navbar({ variant = "style1" }) {
     <div className={style.wrapper}>
       <img src="/logos/kaoua_logo.png" alt="Logo" className="h-12" />
       <nav className={style.nav}>
-        <a href="/complexe" className={style.textColor}>COMPLEXE</a>
-        <a href="/produits" className={style.textColor}>NOS PRODUITS</a>
+        <a href="/" className={style.textColor}>ACCUEUIL</a>
+        <a href="/products" className={style.textColor}>NOS PRODUITS</a>
         <a href="/fournisseurs" className={style.textColor}>FOURNISSEURS</a>
         <a href="/contact" className={style.textColor}>CONTACT</a>
       </nav>

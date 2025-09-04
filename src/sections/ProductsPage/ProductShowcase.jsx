@@ -11,8 +11,8 @@ const products = [
       "Hazelnuts spread with cocoa, delicious and smooth. Perfect for breakfast or snack.",
     descriptionFR:
       "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image:
-      "/products/moon.png",
+    image: "/products/moon_slide.png",
+    logo: "/logos/moon_logo.png",
     bgImage: "/backgrounds/green_bg.png",
     highlightColor: "#d6b08a",
   },
@@ -23,8 +23,8 @@ const products = [
       "Bonbons fruités fourrés à la crème sucrée. Un plaisir pour les petits et les grands.",
     descriptionFR:
       "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image:
-      "https://mezehub.com/cdn/shop/products/milkahaselnut100gr_9ca496b1-bb79-44bc-9452-4d861bd43028.png?v=1586668180",
+    image: "/products/Henina.png",
+    logo: "/logos/henina_logo.png",
     bgImage: "/backgrounds/blue_bg.png",
     highlightColor: "#d72a27",
   },
@@ -35,20 +35,20 @@ const products = [
       "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
     descriptionFR:
       "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/054/314/859/non_2x/jar-of-italian-nutella-hazelnuts-cream-free-png.png",
+    image: "/products/optilla.png",
+    logo: "/logos/optilla_logo.png",
     bgImage: "/backgrounds/green_bg.png",
     highlightColor: "#e43726",
   },
   {
-    id: "henina2",
-    name: "HENINA2",
+    id: "banado",
+    name: "banado",
     descriptionEN:
       "Bonbons fruités fourrés à la crème sucrée. Un plaisir pour les petits et les grands.",
     descriptionFR:
       "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image:
-      "https://mezehub.com/cdn/shop/products/milkahaselnut100gr_9ca496b1-bb79-44bc-9452-4d861bd43028.png?v=1586668180",
+    image: "/products/banado.png",
+    logo: "/logos/banado_logo.png",
     bgImage: "/backgrounds/blue_bg.png",
     highlightColor: "#d72a27",
   },
@@ -59,8 +59,8 @@ const products = [
       "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
     descriptionFR:
       "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image:
-      "https://static.vecteezy.com/system/resources/previews/054/314/859/non_2x/jar-of-italian-nutella-hazelnuts-cream-free-png.png",
+    image: "/products/moon_slide.png",
+    logo: "/logos/moon_logo.png",
     bgImage: "/backgrounds/green_bg.png",
     highlightColor: "#e43726",
   },
@@ -71,11 +71,11 @@ const products = [
       "Bonbons fruités fourrés à la crème sucrée. Un plaisir pour les petits et les grands.",
     descriptionFR:
       "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image:
-      "https://mezehub.com/cdn/shop/products/milkahaselnut100gr_9ca496b1-bb79-44bc-9452-4d861bd43028.png?v=1586668180",
+    image: "/products/moon_slide.png",
+    logo: "/logos/moon_logo.png",
     bgImage: "/backgrounds/blue_bg.png",
     highlightColor: "#d72a27",
-  }
+  },
 ];
 
 const fadeVariants = {
@@ -120,7 +120,7 @@ export default function ProductShowcase() {
       </AnimatePresence>
 
       {/* Content */}
-      <div className="relative z-10 w-full h-full flex flex-col md:px-[15vw] px-[10vw] py-8">
+      <div className="relative z-10 w-full h-full flex flex-col md:px-[15vw] px-[10vw] py-8 ">
         {/* Navbar */}
         <Navbar />
 
@@ -148,7 +148,7 @@ export default function ProductShowcase() {
 
             <AnimatePresence mode="wait">
               <motion.h2
-                key={current.name + "-name"+ currentDescription}
+                key={current.name + "-name" + currentDescription}
                 className="text-2xl font-semibold"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -161,7 +161,7 @@ export default function ProductShowcase() {
 
             <AnimatePresence mode="wait">
               <motion.p
-                key={current.name + "-description"+ currentDescription}
+                key={current.name + "-description" + currentDescription}
                 className="text-base leading-relaxed"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -174,13 +174,13 @@ export default function ProductShowcase() {
           </div>
 
           {/* Product Image */}
-          <div className="md:w-[60%] w-full h-[30vh] relative">
+          <div className="md:w-[60%] w-full h-[30vh] relative rounded-4xl">
             <AnimatePresence mode="sync">
               <motion.img
                 key={current.image}
                 src={current.image}
                 alt={current.name}
-                className="w-full h-full object-contain absolute"
+                className="w-ful h-full object-contain absolute md:right-0 rounded-4xl"
                 variants={fadeVariants}
                 initial="initial"
                 animate="animate"
@@ -195,19 +195,18 @@ export default function ProductShowcase() {
           <h3 className="text-base font-extrabold mb-3 tracking-wide opacity-80 text-white/80">
             NOS MARQUES
           </h3>
-          <div className="flex gap-4 flex-wrap justify-between">
+          <div className="flex gap-4  justify-between flex-wrap md:flex-nowrap">
             {products.map((product) => (
               <button
                 key={product.id}
                 onClick={() => handleChangeProduct(product.id)}
-                className="md:w-auto w-[20vw] md:h-30 h-20 bg-white/10 backdrop-blur-md rounded-xl p-3 flex flex-grow flex-col items-center justify-center hover:bg-white/20 transition"
+                className="md:w-fit w-[20vw] md:h-30 h-20 bg-white/10 backdrop-blur-md rounded-xl p-3 flex flex-grow flex-col items-center justify-center hover:bg-white/20 transition"
               >
                 <img
-                  src={product.image}
+                  src={product.logo}
                   alt={product.name}
-                  className="w-full h-full object-contain"
+                  className="w-[80%] h-full object-contain"
                 />
-                
               </button>
             ))}
           </div>
@@ -216,6 +215,3 @@ export default function ProductShowcase() {
     </div>
   );
 }
-
-
-

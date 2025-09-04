@@ -21,9 +21,9 @@ const products = [
     features: ["Riche en goût", "100% naturel", "Onctueux", "Saveur Premium"],
     sizes: ["750g", "200g", "2.5kg"],
     reference: "012088",
-    image: "https://mezehub.com/cdn/shop/products/milkahaselnut100gr_9ca496b1-bb79-44bc-9452-4d861bd43028.png?v=1586668180",
+    image: "/logos/henina_logo.png",
     bgColor: "#fef2e0",
-    overlayColor: "#a036a3",
+    overlayColor: "#1C85C7",
   },
   {
     id: "moon-chocolate2",
@@ -37,7 +37,18 @@ const products = [
     overlayColor: "#1f5135",
   },
   {
-    id: "moon-chocolate2",
+    id: "moon-chocolate3",
+    name: "Pâte a tartiner MOON - Chocolat",
+    description: "Epic pâte à tartiner super nice sur du pain ca fait plaisir.",
+    features: ["Riche en goût", "100% naturel", "Onctueux", "Saveur Premium"],
+    sizes: ["750g", "200g", "2.5kg"],
+    reference: "012088",
+    image: "/logos/henina_logo.png",
+    bgColor: "#fef2e0",
+    overlayColor: "#1C85C7",
+  },
+  {
+    id: "moon-chocolate4",
     name: "Pâte a tartiner MOON - Chocolat",
     description: "Epic pâte à tartiner super nice sur du pain ca fait plaisir.",
     features: ["Riche en goût", "100% naturel", "Onctueux", "Saveur Premium"],
@@ -48,7 +59,18 @@ const products = [
     overlayColor: "#1f5135",
   },
   {
-    id: "moon-chocolate2",
+    id: "moon-chocolate5",
+    name: "Pâte a tartiner MOON - Chocolat",
+    description: "Epic pâte à tartiner super nice sur du pain ca fait plaisir.",
+    features: ["Riche en goût", "100% naturel", "Onctueux", "Saveur Premium"],
+    sizes: ["750g", "200g", "2.5kg"],
+    reference: "012088",
+    image: "/logos/henina_logo.png",
+    bgColor: "#fef2e0",
+    overlayColor: "#1C85C7",
+  },
+  {
+    id: "moon-chocolate6",
     name: "Pâte a tartiner MOON - Chocolat",
     description: "Epic pâte à tartiner super nice sur du pain ca fait plaisir.",
     features: ["Riche en goût", "100% naturel", "Onctueux", "Saveur Premium"],
@@ -59,27 +81,19 @@ const products = [
     overlayColor: "#1f5135",
   },
   {
-    id: "moon-chocolate2",
+    id: "moon-chocolate7",
     name: "Pâte a tartiner MOON - Chocolat",
     description: "Epic pâte à tartiner super nice sur du pain ca fait plaisir.",
     features: ["Riche en goût", "100% naturel", "Onctueux", "Saveur Premium"],
     sizes: ["750g", "200g", "2.5kg"],
     reference: "012088",
-    image: "/products/moon.png",
+    image: "/logos/henina_logo.png",
     bgColor: "#fef2e0",
-    overlayColor: "#1f5135",
+    overlayColor: "#1C85C7",
   },
-  {
-    id: "moon-chocolate2",
-    name: "Pâte a tartiner MOON - Chocolat",
-    description: "Epic pâte à tartiner super nice sur du pain ca fait plaisir.",
-    features: ["Riche en goût", "100% naturel", "Onctueux", "Saveur Premium"],
-    sizes: ["750g", "200g", "2.5kg"],
-    reference: "012088",
-    image: "/products/moon.png",
-    bgColor: "#fef2e0",
-    overlayColor: "#1f5135",
-  },
+
+ 
+ 
   // Add more products...
 ];
 

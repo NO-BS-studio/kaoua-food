@@ -18,7 +18,7 @@ export default function Footer() {
           <h2 className="text-3xl md:text-[50px] font-extrabold block md:hidden">KAOUAFOOD</h2>
 
           {/* Left: Logo and Map */}
-          <div className="flex-col gap-4 max-w-sm hidden md:flex">
+          <div className="flex-col gap-4 w-[40%] hidden md:flex">
             <h2 className="text-3xl md:text-[50px] font-extrabold">
               KAOUAFOOD
             </h2>
@@ -27,7 +27,7 @@ export default function Footer() {
               alt="Map"
               className="rounded-md object-cover h-[15vw]"
             />
-            <div className="bg-[#b0133b] text-white text-sm px-3 py-2 rounded-xl shadow-xl font-semibold -translate-y-7">
+            <div className="bg-[#b0133b] text-white text-sm md:text-[0.7vw] px-3 py-2 rounded-xl shadow-xl font-semibold -translate-y-7">
               Adresse : Domaine Halimi Property N°260 lot 193 Section 03 local
               B, Hamadi W.Boumerdes – Algeria
             </div>

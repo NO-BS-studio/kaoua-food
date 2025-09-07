@@ -69,7 +69,7 @@ export default function HistorySection() {
             animate="visible"
             exit="exit"
             transition={{ duration: 0.6 }}
-            className=" w-auto mx-auto grid grid-cols-[1fr_1fr_1fr_1fr] grid-rows-3 gap-6"
+            className=" w-auto mx-auto grid grid-cols-[1fr_1fr_1fr_1fr] grid-rows-[14vw_14vw_14vw] gap-6"
           >
             {/* Row 1: Title + Subtitle */}
             <div className="col-span-2 leading-none">
@@ -82,11 +82,11 @@ export default function HistorySection() {
               </p>
             </div>
             {/* Row 1 + 2: Big Image */}
-            <div className="row-span-2 col-span-2">
+            <div className="row-span-2 col-span-2 h-full w-full">
               <img
                 src="/mosaic/Rectangle 48.png"
                 alt="production"
-                className="w-full h-full object-cover rounded-xl aspect-[5/4]"
+                className="w-full h-full object-cover rounded-xl "
               />
             </div>
 
@@ -95,7 +95,7 @@ export default function HistorySection() {
               <img
                 src="/mosaic/Rectangle 43.png"
                 alt="worker"
-                className="w-full h-full aspect-[5/4] object-cover rounded-xl"
+                className="w-full h-full object-cover rounded-xl"
               />
             </div>
             <div className="bg-green-700 text-white h-full rounded-xl flex flex-col justify-center items-center p-6 leading-none">

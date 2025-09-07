@@ -27,7 +27,7 @@ export default function ContactFormSection() {
 
 
         <div className="flex flex-col md:w-1/2 ">
-          <h3 className="text-xl font-bold mb-4">Formulaire de contact</h3>
+          <h3 className="text-[1vw] font-bold mb-4">Formulaire de contact</h3>
           <form className="flex flex-col gap-4 h-full">
             <input
               type="text"

@@ -98,7 +98,7 @@ export default function ProductionSites() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5 }}
-              className="w-full h-full object-cover absolute rounded-3xl"
+              className="h-full object-cover absolute rounded-3xl"
             />
           </AnimatePresence>
         </div>

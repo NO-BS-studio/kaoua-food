@@ -35,7 +35,7 @@ export default function ProductGallery({ products }) {
 
       {/* Product scroll row */}
       <div
-        className="flex  md:gap-4 gap-1 md:p-4 p-0 mb-16 overflow-x-auto w-full  scroll-smooth pb-8 md:mb-[10vh] "
+        className="flex  md:gap-4 gap-1 md:p-4 p-0 mb-16 overflow-x-auto w-full no-scrollbar  scroll-smooth pb-8 md:mb-[10vh] "
         style={{
           WebkitMaskImage:
             "linear-gradient(to right, transparent 0%, black 1%, black 99%, transparent 100%)",

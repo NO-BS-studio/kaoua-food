@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../sections/homePage/HeroSection";
 import HistorySection from "../sections/homePage/HistorySection";
 import MissionSection from "../sections/homePage/MissionSection";
+import MetierSection from "../sections/homePage/MetierSection";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
         <HeroSection />
         <HistorySection />
         <MissionSection/>
+        <MetierSection/>
       </div>
     </>
   );

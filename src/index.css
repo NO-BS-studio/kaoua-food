@@ -11,8 +11,15 @@ html {
 body {
   margin: 0;
 }
-* {
-  overflow: visible;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 @theme {
@@ -24,12 +31,12 @@ body {
 
   font-weight: normal;
   font-style: normal;
-  src: url("../public/fonts/Leggibilmente-MediumRoman.otf") format("truetype");
+  src: url("/fonts/Leggibilmente-MediumRoman.otf") format("truetype");
 }
 @font-face {
   font-family: "leggib";
 
   font-weight: bold;
   font-style: normal;
-  src: url("../public/fonts/Leggibilmente-BoldRoman.otf") format("truetype");
+  src: url("/fonts/Leggibilmente-BoldRoman.otf") format("truetype");
 }

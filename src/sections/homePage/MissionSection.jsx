@@ -66,9 +66,9 @@ export default function MissionSection() {
           </h2>
         </div>
       </div>
-      {/* <div className="mt-[4vw] px-[4vw] overflow-hidden">
+      <div className="mt-[4vw] ml-[15vw] ">
         <ScrollCards />
-      </div>{" "} */}
+      </div>{" "}
     </section>
   );
 }

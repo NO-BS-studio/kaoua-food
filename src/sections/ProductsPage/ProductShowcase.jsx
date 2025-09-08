@@ -180,7 +180,7 @@ export default function ProductShowcase() {
                 key={current.image}
                 src={current.image}
                 alt={current.name}
-                className="w-ful h-full object-contain absolute md:right-0 rounded-4xl"
+                className="absolute inset-0 m-auto max-w-full max-h-full object-contain rounded-4xl"
                 variants={fadeVariants}
                 initial="initial"
                 animate="animate"

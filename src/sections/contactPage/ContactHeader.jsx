@@ -13,7 +13,7 @@ export default function ContactHeader() {
   return (
     <section className="flex flex-col md:flex-row justify-between  md:py-[10vw] gap-[5vw] text-black/30">
       {/* Left: Title & Address */}
-      <div className="md:w-[50%] md:text-[1.8vw] md:leading-[2vw] text-[4vw] leading-[4vw] md:py-0 py-[10vw]">
+      <div className="md:w-[50%] md:text-[1.8vw] md:leading-[2vw] text-[4vw] leading-none md:py-0 py-[10vw]">
         <h1 className="text-4xl font-bold mb-4 md:text-[5vw] text-black">CONTACT</h1>
         <p className=" mb-4 py-[2vw] ">
           Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc

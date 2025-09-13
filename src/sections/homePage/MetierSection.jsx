@@ -9,10 +9,10 @@ export default function MetierSection() {
   // `margin` → lets it trigger slightly before fully visible
 
   return (
-    <section className="w-full  flex flex-col items-center py-[6vw] px-[15vw]">
-      <div className="flex flex-col items-center">
-        <h1 className="uppercase md:text-[6vw] font-extrabold">les métiers</h1>
-        <p className="md:text-[2vw] text-black/40 text-center">
+    <section className="w-full  flex flex-col items-center py-[6vw] pb-[10vw]">
+      <div className="flex flex-col items-center px-[15vw]">
+        <h1 className="uppercase md:text-[6vw] text-[10vw] font-extrabold">les métiers</h1>
+        <p className="md:text-[2vw] text-[3vw] text-black/40 text-center">
           Des questions ? Posez vos questions a notre <br /> chat bot.
         </p>
       </div>

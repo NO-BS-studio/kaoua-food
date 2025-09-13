@@ -26,17 +26,22 @@ const cards = [
     image: "/mosaic/Rectangle 42.png",
     title: "CORPS\nMÉTIER #04",
   },
+  {
+    id: 6,
+    image: "/mosaic/Rectangle 42.png",
+    title: "CORPS\nMÉTIER #04",
+  },
   // ...add 3 more cards
 ];
 
 export default function MetierCards() {
   return (
     <div className="w-full   py-[1vw]">
-      <div className="flex gap-[1vw] overflow-x-auto scrollbar-hide no-scrollbar">
+      <div className="flex md:gap-[1vw] gap-[2vw] overflow-x-auto scrollbar-hide no-scrollbar">
         {cards.map((card) => (
           <div
             key={card.id}
-            className="flex flex-col flex-shrink-0 w-[70vw] md:w-[16.5vw] h-[30vw] bg-white rounded-4xl shadow overflow-hidden snap-center my-[1vw]"
+            className="flex flex-col flex-shrink-0 w-[30vw] md:w-[16.5vw] md:h-[30vw] bg-white md:rounded-4xl rounded-2xl shadow overflow-hidden snap-center my-[1vw]"
           >
             <div className="w-full h-[70%] bg-green-200 rounded-full">
               <img
@@ -45,7 +50,7 @@ export default function MetierCards() {
                 alt=""
               />
             </div>
-            <div className="w-full h-full flex flex-col justify-end p-[1vw] whitespace-pre leading-none text-[2vw] font-extrabold">
+            <div className="w-full h-full flex flex-col justify-end p-[1vw] whitespace-pre leading-none md:text-[2vw] text-[4vw] font-extrabold">
                 {card.title}
             </div>
           </div>

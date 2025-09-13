@@ -35,11 +35,11 @@ export default function ScrollCards() {
         {cards.map((card) => (
           <div
             key={card.id}
-            className="flex-shrink-0 w-[70vw] md:w-[70vw] h-[35vw] bg-white rounded-xl shadow overflow-hidden snap-center my-[1vw]"
+            className="flex-shrink-0 w-[100vw] md:w-[70vw] md:h-[35vw] h-[60vw] bg-white rounded-xl shadow overflow-hidden snap-center my-[1vw]"
           >
-            <div className="flex flex-col md:flex-row h-full">
+            <div className="flex flex-row h-full">
               {/* Image */}
-              <div className="md:w-1/2">
+              <div className="w-1/2">
                 <img
                   src={card.image}
                   alt={card.title}
@@ -48,8 +48,8 @@ export default function ScrollCards() {
               </div>
 
               {/* Content */}
-              <div className="md:w-1/2 p-[2vw] flex flex-col justify-start gap-[3vw]">
-                <div className="text-[4vw] leading-none font-bold text-gray-900 relative">
+              <div className="w-1/2 p-[2vw] flex flex-col justify-start md:gap-[3vw] gap-[6vw]">
+                <div className="md:text-[4vw] text-[6vw] leading-none font-bold text-gray-900 relative">
                   {card.title}
 
                   {card.badge && (
@@ -59,7 +59,7 @@ export default function ScrollCards() {
                   )}
                 </div>
 
-                <p className="mt-[1vw] text-[1.7vw] leading-tight text-black/40 ">
+                <p className="mt-[1vw] md:text-[1.7vw] text-[2.5vw] leading-tight text-black/40 ">
                   {card.description}
                 </p>
               </div>

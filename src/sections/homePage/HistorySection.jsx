@@ -24,15 +24,15 @@ function DirectorPanel() {
       <img
         src="/mosaic/Rectangle 43.png"
         alt="history-img1"
-        className="rounded-2xl shadow-md object-cover w-full aspect-[9/12]"
+        className="rounded-2xl shadow-md object-cover w-full md:w-[50%] aspect-[9/12]"
       />
 
       {/* Text */}
-      <div className="flex flex-col gap-4 justify-between md:w-[40%] h-full leading-none p-[1vw]">
+      <div className="flex flex-col gap-4 justify-between md:w-[50%] h-full leading-none p-[1vw]">
         <h2 className="md:text-[5vw] text-[8vw] font-bold text-black">
           MOT DU DIRECTEUR
         </h2>
-        <p className="md:text-[1.5vw] text-[3vw]">
+        <p className="md:text-[2vw] text-[3vw]">
           Kaoua Food est une entreprise algérienne fondée en 2011, spécialisée
           dans la fabrication de produits agroalimentaires.
           <br />
@@ -141,7 +141,7 @@ export default function HistorySection() {
 
   return (
     <div
-      className="relative w-full md:h-[80vw] flex flex-col items-center justify-center md:px-[15vw] px-[10vw] py-[5vw] text-black/40"
+      className="relative w-full md:h-[80vw] flex flex-col items-center justify-center md:px-[15vw] px-[10vw] py-[5vw] text-black/40 md:cursor-pointer"
       onClick={handleSwitch}
     >
       <AnimatePresence mode="wait">

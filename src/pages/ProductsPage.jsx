@@ -1,3 +1,4 @@
+import MobileNav from "../components/MobileNav";
 import Footer from "../sections/ProductsPage/Footer";
 import ProductGallery from "../sections/ProductsPage/ProductGallery";
 import ProductShowcase from "../sections/ProductsPage/ProductShowcase";
@@ -92,8 +93,6 @@ const products = [
     overlayColor: "#1C85C7",
   },
 
- 
- 
   // Add more products...
 ];
 
@@ -103,9 +102,11 @@ export default function ProductsPage() {
       className="bg-[#fffaf0]"
       style={{ backgroundImage: `url("/backgrounds/transparent_bg.png")` }}
     >
+      <MobileNav/>
+
       <ProductShowcase />
       <ProductGallery products={products} />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

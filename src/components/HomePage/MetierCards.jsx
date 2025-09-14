@@ -36,8 +36,8 @@ const cards = [
 
 export default function MetierCards() {
   return (
-    <div className="w-full   py-[1vw]">
-      <div className="flex md:gap-[1vw] gap-[2vw] overflow-x-auto scrollbar-hide no-scrollbar">
+    <div className="w-full md:px-[15vw]   py-[1vw]">
+      <div className="flex md:gap-[1vw] gap-[2vw] overflow-x-auto ">
         {cards.map((card) => (
           <div
             key={card.id}

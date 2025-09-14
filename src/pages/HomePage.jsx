@@ -4,6 +4,7 @@ import HeroSection from "../sections/homePage/HeroSection";
 import HistorySection from "../sections/homePage/HistorySection";
 import MissionSection from "../sections/homePage/MissionSection";
 import MetierSection from "../sections/homePage/MetierSection";
+import MobileNav from "../components/MobileNav";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
         className="bg-[#FAF7F2]"
         style={{ backgroundImage: `url("/backgrounds/transparent_bg.png")` }}
       >
+        <MobileNav/>
         <HeroSection />
         <HistorySection />
         <MissionSection/>

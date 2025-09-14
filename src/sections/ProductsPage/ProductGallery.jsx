@@ -118,7 +118,7 @@ export default function ProductGallery({ products }) {
             className="flex relative "
             layout
             initial={{ opacity: 1, y: 0, height: "0" }}
-            animate={{ opacity: 1, y: 0, height: isMobile ? "80vh" : "25vw" }}
+            animate={{ opacity: 1, y: 0, height: isMobile ? "180vw" : "25vw" }}
             transition={{ duration: 0.4 }}
           >
             {selected && (
@@ -135,7 +135,7 @@ export default function ProductGallery({ products }) {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.4 }}
-                className=" relative  flex gap-8 md:items-center justify-start md:flex-row flex-col items-center md:h-full h-[40vh] "
+                className=" relative  flex gap-8 md:items-center justify-start md:flex-row flex-col items-center md:h-full h-[150vw] "
               >
                 {/* Image section */}
                 <div className="relative h-full md:w-[20vw] items-start justify-center flex">
@@ -151,7 +151,7 @@ export default function ProductGallery({ products }) {
                 </div>
 
                 {/* Textual content */}
-                <div className="pl-[5vw] space-y-4 max-w-2xl md:h-full h-[50vh] relative">
+                <div className="pl-[5vw] space-y-4 max-w-2xl md:h-full h-[100vw] relative">
                   <h3 className="text-3xl md:text-[2vw] font-bold text-black leading-tight">
                     {selected.name}
                   </h3>

@@ -31,11 +31,11 @@ const cards = [
 export default function ScrollCards() {
   return (
     <div className="w-full   py-[1vw]">
-      <div className="flex gap-[2vw] overflow-x-auto scrollbar-hide no-scrollbar pr-[15vw]">
+      <div className="flex gap-[2vw] overflow-x-auto scrollbar-hide no-scrollbar pr-[15vw] md:pl-0 pl-[15vw]">
         {cards.map((card) => (
           <div
             key={card.id}
-            className="flex-shrink-0 w-[100vw] md:w-[70vw] md:h-[35vw] h-[60vw] bg-white rounded-xl shadow overflow-hidden snap-center my-[1vw]"
+            className="flex-shrink-0 w-[90vw] md:w-[70vw] md:h-[35vw] h-[55vw] bg-white rounded-xl shadow overflow-hidden snap-center my-[1vw]"
           >
             <div className="flex flex-row h-full">
               {/* Image */}

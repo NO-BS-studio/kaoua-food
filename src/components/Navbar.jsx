@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import clsx from "clsx"; // For conditional class handling (optional, but clean)
-
 export default function Navbar({ variant = "style1" }) {
+    const { t, i18n } = useTranslation();
+
   const navStyles = {
     style1: {
       wrapper: "flex items-center md:justify-between justify-around w-full mb-10",
@@ -23,10 +24,10 @@ export default function Navbar({ variant = "style1" }) {
     <div className={style.wrapper}>
       <img src="/logos/kaoua_logo.png" alt="Logo" className="md:h-[4vw] h-[10vw]" />
       <nav className={style.nav}>
-        <a href="/" className={style.textColor}>ACCUEUIL</a>
-        <a href="/produits" className={style.textColor}>NOS PRODUITS</a>
-        <a href="/carriere" className={style.textColor}>CARRIERE</a>
-        <a href="/contact" className={style.textColor}>CONTACT</a>
+        <a href="/" className={style.textColor}>{t("nav.accueuil")}</a>
+        <a href="/produits" className={style.textColor}>{t("nav.produits")}</a>
+        <a href="/carriere" className={style.textColor}>{t("nav.carriere")}</a>
+        <a href="/contact" className={style.textColor}>{t("nav.contact")}</a>
       </nav>
       <div className="md:flex hidden gap-4">
         <FlagButton code="fr" borderColor={style.flagBorder} />

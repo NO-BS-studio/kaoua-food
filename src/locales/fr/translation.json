@@ -1,4 +1,81 @@
 {
+
+  "nav":{
+    "accueuil" : "ACCUEUIL",
+    "produits" : "PRODUITS",
+    "carriere" : "CARRIERE",
+    "contact" : "CONTACT"
+  },
+  "homePage": {
+    "section1": {
+      "title": "Un monde\n de douceur",
+      "subtitle": "Chocolats & confiseries, fabriqués avec passion",
+      "button": "découvrir"
+    },
+    "section2": {
+      "title": "mot du directeur",
+      "paragraph": "Kaoua Food est une entreprise algérienne fondée en 2011, spécialisée dans la fabrication de produits agroalimentaires.\n\nReconnue pour sa pâte à tartiner emblématique Optilla, la marque s’est rapidement imposée comme une référence dans le cœur des consommateurs algériens.\n\nForte de ce succès, Kaoua Food a élargi son portefeuille avec une gamme complète de confiseries, bonbons durs, gelées : alliant goût, innovation et qualité constante.\n\nEn 2024, l’entreprise lance une gamme premium de chocolat et de biscuiterie la marque MOON, répondant à une demande croissante pour des produits de qualité, accessibles à un large public."
+    },
+    "section3": {
+      "title": "HISTOIRE",
+      "p1": "Entreprise algérienne fondée en 2011, spécialisée dans la fabrication de produits agroalimentaires.",
+      "p2": "Réputée pour sa célèbre pâte à tartiner Optilla, la marque Kaoua Food s’est vite imposée en Algérie. Fort de ce succès, elle propose désormais une gamme variée de confiseries alliant goût, innovation et qualité.",
+      "origines": "origines de la\nmarque"
+    },
+    "section4": {
+      "title": "NOTRE\nMISSION",
+      "p1": "Notre mission est d’offrir des produits de qualité supérieure, alliant saveur, confiance et accessibilité, pour répondre aux attentes quotidiennes de nos consommateurs.",
+      "values": [
+        {
+          "title": "Qualité",
+          "content": "Nous nous engageons à proposer des produits qui allient excellence et goût"
+        },
+        {
+          "title": "Innovation",
+          "content": "Notre expertise et notre département R&D sont pleinement dédiés à la création de produits"
+        },
+        {
+          "title": "Proximité",
+          "content": "Nous plaçons le consommateur algérien au cœur de notre stratégie"
+        }
+      ],
+      "redcard": {
+        "title": "Notre\nmission",
+        "p2": "Nous visons à faire de chaque produit Kaoua Food un symbole de confiance, d’innovation et de fierté nationale, en enrichissant les moments de vie des consommateurs avec authenticité et générosité."
+      },
+      "engagements": [
+        {
+          "title": "Processus de fabrication",
+          "paragraph": "Nos usines sont dotées de lignes de production spécialisées pour la pâte à tartiner, la biscuiterie et la confiserie. Chaque étape, de la sélection des matières premières à l’emballage, est contrôlée avec précision. Notre processus est pensé pour allier efficacité industrielle et excellence gustative."
+        },
+        {
+          "title": "Innovation & savoir-faire industriel",
+          "paragraph": "Chez Kaoua Food, l’innovation est au cœur de notre démarche industrielle. Nos équipes R&D travaillent en synergie avec nos unités de production pour créer des produits gourmands et différenciants. Notre outil industriel moderne nous permet de répondre avec agilité aux évolutions du marché. C’est cette alliance entre technologie, créativité et rigueur qui fait notre force."
+        },
+        {
+          "title": "Qualité & certification ISO 9001",
+          "paragraph": "Kaoua Food est certifiée ISO 9001, une reconnaissance de notre système de management de la qualité. Cette certification garantit des processus maîtrisés, une amélioration continue et une forte orientation client. Elle reflète notre engagement à offrir des produits sûrs, réguliers et fiables."
+        },
+        {
+          "title": "Protection des données personnelles",
+          "paragraph": "Kaoua Food s’engage à respecter scrupuleusement la loi 18-07 sur la protection des données personnelles. Nous traitons les informations de nos clients, partenaires et collaborateurs avec transparence et responsabilité."
+        }
+      ]
+    },
+    "section5": {
+      "title": "Les métiers",
+      "subtitle": "Découvrez des opportunités de carrière intéressantes dans nos unités."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Vous avez une question sur nos produits ou simplement envie de nous dire bonjour ? Nous serions ravis de vous lire ! Contactez notre équipe de service client sympathique par téléphone, par e-mail ou via le formulaire de contact.",
+    "form": "Contact form",
+    "envoyer": "SEND"
+  },
+
   "vedettes": "NOS VEDETTES",
-  "description": "Ceci est un exemple en français"
+  "nosProduits": "NOS PRODUITS",
+
+  "marques": "NOS MARQUES"
 }

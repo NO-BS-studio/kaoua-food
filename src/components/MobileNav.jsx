@@ -4,18 +4,11 @@ import { Link } from "react-router-dom"; // ✅ Use Link for routing
 import { useTranslation } from "react-i18next";
 import useDisableScroll from "../utils/useDisableScroll";
 
-const navItems = [
-  { label: "ACCUEUIL", path: "/" },
-  { label: "NOS PRODUITS", path: "/produits" },
-  { label: "CARRIERE", path: "/carriere" },
-  { label: "CONTACT", path: "/contact" },
-];
-
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
   useDisableScroll(isOpen);
 
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState(i18n.language || "en");
 
   const toggleLanguage = () => {
@@ -23,6 +16,15 @@ export default function MobileNav() {
     i18n.changeLanguage(newLang);
     setCurrentLang(newLang);
   };
+
+  const navItems = [
+    { label: t("nav.accueuil"), path: "/" },
+    { label: t("nav.produits"), path: "/produits" },
+    { label: t("nav.carriere"), path: "/carriere" },
+    { label: t("nav.contact"), path: "/contact" },
+  ];
+
+
 
   return (
     <>

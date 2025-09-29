@@ -8,16 +8,18 @@ import {
   FaYoutube,
   FaLinkedin,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function ContactHeader() {
+    const { t, i18n } = useTranslation();
+
   return (
     <section className="flex flex-col md:flex-row justify-between  md:py-[10vw] gap-[5vw] text-black/30">
       {/* Left: Title & Address */}
       <div className="md:w-[50%] md:text-[1.8vw] md:leading-[2vw] text-[4vw] leading-none md:py-0 py-[10vw]">
         <h1 className="text-4xl font-bold mb-4 md:text-[5vw] text-black">CONTACT</h1>
         <p className=" mb-4 py-[2vw] ">
-          Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum,
+          {t("contact.description")}
         </p>
         <p className="font-bold md:text-[2vw] text-[4.2vw]">Adresse</p>
         <p className="">
@@ -35,9 +37,9 @@ export default function ContactHeader() {
 
           <div className="grid items-center grid-rows-2 grid-cols-[10%_auto] mx-[5%] gap-[2vw] md:text-[2vw] text-[4vw] my-[5vw] md:my-0">
             <FaPhoneAlt className="" />
-            <span className="flex w-full justify-center">+213 XXX XXX XXX</span>
+            <span className="flex w-full justify-center">+213 550 46 32 44</span>
             <FaEnvelope className="" />
-            <span className="flex w-full justify-center">contact@kawafood.com</span>
+            <span className="flex w-full justify-center">contact@kaouafood.dz</span>
           </div>
 
           {/* <div className="flex items-center mt-2 gap-2"></div>

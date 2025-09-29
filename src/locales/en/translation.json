@@ -1,4 +1,85 @@
 {
-  "vedettes": "OUR BEST",
-  "description": "This is an example in English"
+  "nav":{
+    "accueuil" : "HOME",
+    "produits" : "PRODUCTS",
+    "carriere" : "CARREER",
+    "contact" : "CONTACT"
+  },
+  "homePage": {
+    "section1": {
+      "title": "A World\n of Sweetness",
+      "subtitle": "Chocolates & Confectionery, Crafted with Passion",
+      "button": "discover"
+    },
+    "section2": {
+      "title": "Message from the Director",
+      "paragraph": "Kaoua Food is an Algerian company founded in 2011, specialized in the production of agri-food products.\n\nRecognized for its iconic spread Optilla, the brand quickly established itself as a reference in the hearts of Algerian consumers.\n\nBuilding on this success, Kaoua Food expanded its portfolio with a complete range of confectioneries, hard candies, and jellies: combining taste, innovation, and consistent quality.\n\nIn 2024, the company launched a premium range of chocolate and biscuits under the MOON brand, responding to a growing demand for quality products accessible to a wide audience."
+    },
+    "section3": {
+      "title": "HISTORY",
+      "p1": "An Algerian company founded in 2011, specialized in the production of agri-food products.",
+      "p2": "Renowned for its famous spread Optilla, the Kaoua Food brand quickly became a household name in Algeria. Building on this success, it now offers a wide range of confectionery products combining taste, innovation, and quality.",
+            "origines" :"origins of the\nbrand"
+
+    
+    },
+    "section4": {
+      "title": "OUR\nMISSION",
+      "p1": "Our mission is to offer superior quality products that combine flavor, trust, and accessibility, to meet the daily expectations of our consumers.",
+      "values": [
+        {
+          "title": "Quality",
+          "content": "We are committed to offering products that combine excellence and taste."
+        },
+        {
+          "title": "Innovation",
+          "content": "Our expertise and our R&D department are fully dedicated to product creation."
+        },
+        {
+          "title": "Proximity",
+          "content": "We place the Algerian consumer at the heart of our strategy."
+        }
+      ],
+      "redcard": {
+        "title": "Our\nMission",
+        "p2": "We aim to make every Kaoua Food product a symbol of trust, innovation, and national pride, enriching consumers’ everyday moments with authenticity and generosity."
+      },
+      "engagements": [
+        {
+          "title": "Manufacturing Process",
+          "paragraph": "Our factories are equipped with specialized production lines for spreads, biscuits, and confectionery. Every step, from the selection of raw materials to packaging, is precisely controlled. Our process is designed to combine industrial efficiency with gourmet excellence."
+        },
+        {
+          "title": "Innovation & Industrial Expertise",
+          "paragraph": "At Kaoua Food, innovation is at the heart of our industrial approach. Our R&D teams work in synergy with our production units to create tasty and distinctive products. Our modern industrial tools allow us to respond with agility to market changes. This combination of technology, creativity, and rigor is what makes us strong."
+        },
+        {
+          "title": "Quality & ISO 9001 Certification",
+          "paragraph": "Kaoua Food is ISO 9001 certified, a recognition of our quality management system. This certification ensures controlled processes, continuous improvement, and a strong customer focus. It reflects our commitment to providing safe, consistent, and reliable products."
+        },
+        {
+          "title": "Personal Data Protection",
+          "paragraph": "Kaoua Food is committed to strictly complying with Law 18-07 on personal data protection. We handle our clients’, partners’, and employees’ information with transparency and responsibility."
+        }
+      ]
+    },
+    "section5": {
+      "title": "Careers",
+      "subtitle": "Discover exciting job opportunities at our facilities."
+    }
+  },
+
+  "contact": {
+    "title": "Contact",
+    "description": "Got a question about our products or just want to say hello? We'd love to hear from you! Reach out to our friendly customer service team via phone, email, or the contact form.",
+    "form" : "Contact form",
+    "envoyer" : "SEND"
+  },
+
+  "vedettes" : "OUR STARS",
+
+  "nosProduits" : "OUR PRODUCTS",
+
+  "marques" : "OUR BRANDS"
+
 }

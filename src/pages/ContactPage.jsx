@@ -13,7 +13,7 @@ export default function ContactPage() {
       <MobileNav/>
       <Navbar variant="style2" />
       <ContactHeader />
-      <ProductionSites />
+      {/* <ProductionSites /> */}
       <ContactFormSection />
     </div>
   );

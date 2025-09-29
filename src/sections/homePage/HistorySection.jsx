@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import useIsMobile from "../../utils/isMobile";
-
+import { useTranslation } from "react-i18next";
 const fadeVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
@@ -10,6 +10,8 @@ const fadeVariants = {
 
 // ✅ First panel: "Mot du Directeur"
 function DirectorPanel() {
+  const { t, i18n } = useTranslation();
+
   return (
     <motion.div
       key="first"
@@ -29,27 +31,11 @@ function DirectorPanel() {
 
       {/* Text */}
       <div className="flex flex-col gap-4 justify-between md:w-[50%] h-full leading-none p-[1vw]">
-        <h2 className="md:text-[5vw] text-[8vw] font-bold text-black">
-          MOT DU DIRECTEUR
+        <h2 className="md:text-[5vw] text-[8vw] font-bold text-black uppercase">
+          {t("homePage.section2.title")}{" "}
         </h2>
-        <p className="md:text-[2vw] text-[3vw]">
-          Kaoua Food est une entreprise algérienne fondée en 2011, spécialisée
-          dans la fabrication de produits agroalimentaires.
-          <br />
-          <br />
-          Reconnue pour sa pâte à tartiner emblématique Optilla, la marque s’est
-          rapidement imposée comme une référence dans le cœur des consommateurs
-          algériens.
-          <br />
-          <br />
-          Forte de ce succès, Kaoua Food a élargi son portefeuille avec une
-          gamme complète de confiseries, bonbons durs, gelées : alliant goût,
-          innovation et qualité constante.
-          <br />
-          <br />
-          En 2024, l’entreprise lance une gamme premium de chocolat et de
-          biscuiterie la marque MOON, répondant à une demande croissante pour
-          des produits de qualité, accessibles à un large public.
+        <p className="md:text-[2vw] text-[3vw] whitespace-pre-wrap">
+          {t("homePage.section2.paragraph")}{" "}
         </p>
       </div>
     </motion.div>
@@ -58,6 +44,8 @@ function DirectorPanel() {
 
 // ✅ Second panel: "L’Histoire"
 function HistoryPanel() {
+  const { t, i18n } = useTranslation();
+
   return (
     <motion.div
       key="second"
@@ -66,16 +54,15 @@ function HistoryPanel() {
       animate="visible"
       exit="exit"
       transition={{ duration: 1 }}
-      className="w-auto  grid grid-cols-[1fr_1fr_1fr_1fr] md:grid-rows-[14vw_14vw_14vw] grid-rows-[20vw_20vw_20vw] md:gap-6 gap-2 my-[5vw] md:my-0"
+      className="w-[80vw]  grid grid-cols-[1fr_1fr_1fr_1fr] md:grid-rows-[14vw_14vw_14vw] grid-rows-[20vw_20vw_20vw] md:gap-6 gap-2 my-[5vw] md:my-0"
     >
       {/* Row 1: Title + Subtitle */}
       <div className="md:col-span-2 col-span-4 leading-none order-1 md:order-none">
         <h2 className="md:text-[5vw] text-[10vw] font-extrabold text-black">
-          L’HISTOIRE
+          {t("homePage.section3.title")}
         </h2>
         <p className="mt-2 text-[3vw] md:text-[1.5vw]">
-          entreprise algérienne fondée en 2011, spécialisée dans la fabrication
-          de produits agroalimentaires.
+          {t("homePage.section3.p1")}
         </p>
       </div>
       {/* Row 1 + 2: Big Image - FIRST on mobile, stays in place on desktop */}
@@ -86,7 +73,6 @@ function HistoryPanel() {
           className="w-full h-full object-cover rounded-xl"
         />
       </div>
-
 
       {/* Row 2: Worker + Green Card */}
       <div className="order-3 md:order-none">
@@ -109,14 +95,11 @@ function HistoryPanel() {
           alt=""
           className="absolute w-[30%] top-[-3vw] left-[2%] -rotate-[5deg]"
         />
-        <div className="uppercase absolute bg-orange-400 bottom-[1vw] left-[-4vw] py-[0.5vw] pl-[1.5vw] pr-[3vw] rounded-xl text-white text-[1vw] font-bold leading-none rotate-3">
-          origines de la <br /> marque
+        <div className="uppercase whitespace-pre absolute bg-orange-400 bottom-[1vw] left-[-4vw] py-[0.5vw] pl-[1.5vw] pr-[3vw] rounded-xl text-white text-[1vw] font-bold leading-none rotate-3">
+          {t("homePage.section3.origines")}
         </div>
         <p className="md:text-[1.6vw] text-[1.8vw] leading-none pl-[33%] md:py-[2vw]">
-          Réputée pour sa célèbre pâte à tartiner Optilla, la marque Kaoua Food
-          s’est vite imposée en Algérie. Fort de ce succès, elle propose
-          désormais une gamme variée de confiseries alliant goût, innovation et
-          qualité.
+          {t("homePage.section3.p2")}
         </p>
       </div>
 
@@ -141,18 +124,24 @@ export default function HistorySection() {
 
   return (
     <div
-      className="relative w-full md:h-[80vw] flex flex-col items-center justify-center md:px-[15vw] px-[10vw] py-[5vw] text-black/40 md:cursor-pointer"
-      onClick={handleSwitch}
+      className="relative w-full gap-[5vw]  flex flex-col items-center justify-center md:px-[15vw] px-[10vw] py-[5vw] text-black/40 md:cursor-pointer"
+      // onClick={handleSwitch}
     >
       <AnimatePresence mode="wait">
-        {showFirst || isMobile ? (
-          <>
-            <DirectorPanel />
-            {isMobile && <HistoryPanel />}
-          </>
-        ) : (
-          <HistoryPanel />
-        )}
+        {
+          // showFirst || isMobile
+          true ? (
+            <>
+              <DirectorPanel />
+              {
+                // isMobile
+                true && <HistoryPanel />
+              }
+            </>
+          ) : (
+            <HistoryPanel />
+          )
+        }
       </AnimatePresence>
     </div>
   );

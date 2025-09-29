@@ -1,41 +1,57 @@
 import React from "react";
-
-const cards = [
-  {
-    id: 1,
-    image: "/mosaic/Rectangle 57.png",
-    title: "Processus de fabrication",
-    badge: "KAOUAFOOD USINE",
-    description:
-      "Nos usines sont dotées de lignes de production spécialisées pour la pâte à tartiner, la biscuiterie et la confiserie. Chaque étape, de la sélection des matières premières à l’emballage, est contrôlée avec précision. Notre processus est pensé pour allier efficacité industrielle et excellence gustative.",
-  },
-  {
-    id: 2,
-    image: "/mosaic/Rectangle 57.png",
-    title: "Contrôle qualité",
-    badge: "QUALITÉ",
-    description:
-      "Chaque produit est soumis à un contrôle rigoureux afin de garantir une qualité constante, en accord avec nos standards d’excellence.",
-  },
-  {
-    id: 3,
-    image: "/mosaic/Rectangle 57.png",
-    title: "Innovation continue",
-    badge: "R&D",
-    description:
-      "Notre département R&D explore constamment de nouvelles recettes et techniques pour répondre aux attentes des consommateurs.",
-  },
-  // ...add 3 more cards
-];
+import { useDraggable } from "react-use-draggable-scroll";
+import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ScrollCards() {
+  const ref = useRef();
+  const dragRow = useDraggable(ref);
+
+  const { t, i18n } = useTranslation();
+
+  const cards = [
+    {
+      id: 1,
+      image: "/mosaic/Rectangle 57.png",
+      title: t("homePage.section4.engagements.0.title"),
+      badge: "KAOUAFOOD USINE",
+      description: t("homePage.section4.engagements.0.paragraph"),
+    },
+    {
+      id: 2,
+      image: "/mosaic/Rectangle 57.png",
+      title: t("homePage.section4.engagements.1.title"),
+      badge: "QUALITÉ",
+      description: t("homePage.section4.engagements.1.paragraph"),
+    },
+    {
+      id: 3,
+      image: "/mosaic/Rectangle 57.png",
+      title: t("homePage.section4.engagements.2.title"),
+      // badge: "R&D",
+      description: t("homePage.section4.engagements.2.paragraph"),
+    },
+    {
+      id: 3,
+      image: "/mosaic/Rectangle 57.png",
+      title: t("homePage.section4.engagements.3.title"),
+      // badge: "R&D",
+      description: t("homePage.section4.engagements.3.paragraph"),
+    },
+    // ...add 3 more cards
+  ];
+
   return (
     <div className="w-full   py-[1vw]">
-      <div className="flex gap-[2vw] overflow-x-auto scrollbar-hide no-scrollbar pr-[15vw] md:pl-0 pl-[15vw]">
+      <div
+        ref={ref}
+        {...dragRow.events}
+        className="flex gap-[2vw] overflow-x-auto scrollbar-hide no-scrollbar pr-[15vw] md:pl-0 pl-[15vw]"
+      >
         {cards.map((card) => (
           <div
             key={card.id}
-            className="flex-shrink-0 w-[90vw] md:w-[70vw] md:h-[35vw] h-[55vw] bg-white rounded-xl shadow overflow-hidden snap-center my-[1vw]"
+            className="flex-shrink-0 w-[90vw] md:w-[70vw] md:h-[40vw] h-[55vw] bg-white rounded-xl shadow overflow-hidden snap-center my-[1vw] select-none cursor-grab"
           >
             <div className="flex flex-row h-full">
               {/* Image */}
@@ -43,6 +59,7 @@ export default function ScrollCards() {
                 <img
                   src={card.image}
                   alt={card.title}
+                  draggable={false}
                   className="h-full w-full object-cover"
                 />
               </div>

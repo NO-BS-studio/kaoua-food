@@ -2,6 +2,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRef } from "react";
 import useIsMobile from "../../utils/isMobile";
+import { Link as ScrollLink } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 export default function ProductGallery({ products }) {
   const [selected, setSelected] = useState(null);
@@ -9,6 +11,7 @@ export default function ProductGallery({ products }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const isMobile = useIsMobile(); // true if < 768px
+  const { t, i18n } = useTranslation();
 
   const firstSelection = useRef(true);
   const justSelected = useRef(false);
@@ -30,12 +33,14 @@ export default function ProductGallery({ products }) {
     >
       {/* Top title */}
       <div className="mb-8">
-        <h2 className="text-5xl md:text-[2.5vw] font-black text-black">NOS PRODUITS</h2>
+        <h2 className="text-5xl md:text-[2.5vw] font-black text-black">
+          {t("nosProduits")}
+        </h2>
       </div>
 
       {/* Product scroll row */}
       <div
-        className="flex  md:gap-4 gap-1 md:p-4 p-0 mb-16 overflow-x-auto w-full no-scrollbar  scroll-smooth pb-8 md:mb-[10vh] "
+        className="grid md:grid-cols-6 grid-cols-2  gap-4  md:p-4 p-0 mb-16 overflow-hidden w-full no-scrollbar  scroll-smooth pb-8 md:mb-[10vh] "
         style={{
           WebkitMaskImage:
             "linear-gradient(to right, transparent 0%, black 1%, black 99%, transparent 100%)",
@@ -46,27 +51,32 @@ export default function ProductGallery({ products }) {
         }}
       >
         {products.map((product, index) => (
-          <div
+          <ScrollLink
             key={product.id}
-            className="relative flex overflow-y-visible z-20"
+            className="relative flex overflow-y-visible md:h-[10vw] h-[40vw] grow z-20 "
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => handleSelect(product)}
+            to="details"
+            duration={600}
+            smooth={true}
+            offset={-300}
           >
             <motion.div
-              className=" md:w-40 w-20 rounded-2xl shadow-xl p-4 cursor-pointer z-30"
+              className="  rounded-2xl shadow-xl p-4 cursor-pointer z-30 bg-[#FFE9C2]"
               style={{ backgroundColor: product.bgColor }}
               whileHover={{ scale: 1.05 }}
             >
               <img
                 src={product.image}
-                alt={product.name}
-                className="  w-full h-full object-contain mx-auto"
+                // alt={product.name}
+                className="  h-full  object-contain mx-auto"
               />
             </motion.div>
 
             <AnimatePresence mode="wait">
-              {hoveredIndex === index && (
+              {/* {hoveredIndex === index && ( */}
+              {false && (
                 <motion.div
                   className=" rounded-2xl py-4 shadow-xl overflow-y-visible relative z-10 hidden md:block"
                   style={{ backgroundColor: product.bgColor }}
@@ -107,18 +117,19 @@ export default function ProductGallery({ products }) {
                 </motion.div>
               )}
             </AnimatePresence>
-          </div>
+          </ScrollLink>
         ))}
       </div>
 
       {/* Detail panel */}
       <AnimatePresence mode="wait">
+        <div className="h-0" name="details"></div>
         {hasSelectedOnce && (
           <motion.div
             className="flex relative "
             layout
             initial={{ opacity: 1, y: 0, height: "0" }}
-            animate={{ opacity: 1, y: 0, height: isMobile ? "180vw" : "25vw" }}
+            animate={{ opacity: 1, y: 0, height: isMobile ? "200vw" : "25vw" }}
             transition={{ duration: 0.4 }}
           >
             {selected && (
@@ -139,14 +150,11 @@ export default function ProductGallery({ products }) {
               >
                 {/* Image section */}
                 <div className="relative h-full md:w-[20vw] items-start justify-center flex">
-                  <div
-                    className="absolute md:w-[18vw] md:h-[18vw] w-[40vw] h-[40vw] rotate-[-10deg] rounded-3xl"
-                    style={{ backgroundColor: selected.overlayColor }}
-                  />
+                  <div className="absolute md:w-[18vw] md:h-[18vw] w-[60vw] h-[60vw] bg-amber-800/80 rotate-[-10deg] rounded-3xl" />
                   <img
                     src={selected.image}
                     alt={selected.name}
-                    className="relative z-10 md:w-[15vw] w-[40vw] object-contain"
+                    className="relative  z-10 md:h-[20vw] h-[60vw] md:top-0 top-[-5vw]  w-[40vw] object-contain"
                   />
                 </div>
 
@@ -159,38 +167,8 @@ export default function ProductGallery({ products }) {
                     {selected.description}
                   </p>
 
-                  {/* Sizes */}
-                  <div>
-                    <span className="font-semibold text-sm md:text-[1vw] text-gray-500 block mb-1">
-                      Poids
-                    </span>
-                    <div className="flex gap-2 flex-wrap">
-                      {selected.sizes.map((size) => (
-                        <span
-                          key={size}
-                          className="px-2 py-1 rounded-lg bg-gray-200 text-sm md:text-[1vw]"
-                        >
-                          {size}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Features */}
-                  <div className="flex gap-8 mt-4 flex-wrap">
-                    {selected.features.map((feat) => (
-                      <div key={feat} className="flex flex-col items-center">
-                        <div className="w-12 h-12 md:w-[2.5vw] md:h-[2.5vw] rounded-full bg-[#e8ded2]"></div>
-                        <span className="text-xs md:text-[0.8vw] mt-2 text-center text-gray-700 font-semibold">
-                          {feat}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Reference */}
                   <div className="text-sm text-gray-400 mt-4">
-                    @moon.algerie — ref. {selected.reference}
+                    @kaouafood.algerie
                   </div>
                 </div>
               </motion.div>
@@ -198,13 +176,6 @@ export default function ProductGallery({ products }) {
           </motion.div>
         )}
       </AnimatePresence>
-
-      <div className="mb-8">
-        <h2 className="text-4xl md:text-[2.5vw] font-black text-black w-1/2 pb-5">NOS GARANTIES</h2>
-        <h2 className="text-sm md:text-[1.2vw] md:leading-[2vw]  text-black">
-          Notre collection large de produits super sympas qui sont super bons à manger et ouais c’est incroyable... Vous me croyez pas? Testez vous-meme !
-        </h2>
-      </div>
     </motion.div>
   );
 }

@@ -5,76 +5,82 @@ import Navbar from "../../components/Navbar";
 
 const products = [
   {
-    id: "moon",
-    name: "PÂTE MOON",
-    descriptionEN:
-      "Hazelnuts spread with cocoa, delicious and smooth. Perfect for breakfast or snack.",
-    descriptionFR:
-      "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image: "/products/moon_slide.png",
-    logo: "/logos/moon_logo.png",
-    bgImage: "/backgrounds/green_bg.png",
-    highlightColor: "#d6b08a",
-  },
-  {
-    id: "henina",
-    name: "HENINA",
-    descriptionEN:
-      "Bonbons fruités fourrés à la crème sucrée. Un plaisir pour les petits et les grands.",
-    descriptionFR:
-      "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image: "/products/Henina.png",
-    logo: "/logos/henina_logo.png",
-    bgImage: "/backgrounds/blue_bg.png",
-    highlightColor: "#d72a27",
-  },
-  {
     id: "optilla",
     name: "OPTILLA",
     descriptionEN:
-      "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
+      "A versatile range of creamy chocolate spreads, filled chocolates, and biscuits. Optilla offers classic, indulgent tastes like hazelnut and caramel for everyday moments of sweetness.",
     descriptionFR:
-      "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
+      "Une gamme polyvalente de pâtes à tartiner au chocolat crémeuses, chocolats fourrés et biscuits. Optilla propose des saveurs classiques et gourmandes comme la noisette et le caramel pour des moments de douceur au quotidien.",
     image: "/products/optilla.png",
     logo: "/logos/optilla_logo.png",
-    bgImage: "/backgrounds/green_bg.png",
-    highlightColor: "#e43726",
+    bgImage: "/backgrounds/bg-red.jpg",
+    highlightColor: "#ffffff",
+    textColor: "#ffffff",
+  },
+  {
+    id: "Moon (Mon Excellence)",
+    name: "Moon (Mon Excellence)",
+    descriptionEN:
+      "MOON EXCELLENCE defines premium quality with its rich, gourmet hazelnut spreads. Made with 13% real hazelnuts, it's the ultimate indulgence for the most discerning palates.",
+    descriptionFR:
+      "MOON EXCELLENCE définit la qualité premium avec ses pâtes à tartiner gourmandes à la noisette. Composées de 13% de véritables noisettes, elles représentent l’indulgence ultime pour les palais les plus exigeants.",
+    image: "/products/moon_slide.png",
+    logo: "/logos/moon_logo.png",
+    bgImage: "/backgrounds/bg-yellow.jpg",
+    highlightColor: "#d6b08a",
+    textColor: "#ffffff",
   },
   {
     id: "banado",
     name: "banado",
     descriptionEN:
-      "Bonbons fruités fourrés à la crème sucrée. Un plaisir pour les petits et les grands.",
+      "Banado specializes in high-quality compound coatings in dark, milk, and white chocolate variations. Ideal for baking, confectionery, or simply enjoying as a delicious snack.",
     descriptionFR:
-      "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
+      "Banado est spécialisé dans les enrobages composés de haute qualité, déclinés en chocolat noir, au lait et blanc. Idéal pour la pâtisserie, la confiserie ou simplement à déguster comme un en-cas délicieux.",
     image: "/products/banado.png",
     logo: "/logos/banado_logo.png",
-    bgImage: "/backgrounds/blue_bg.png",
-    highlightColor: "#d72a27",
+    bgImage: "/backgrounds/bg-light-blue.jpg",
+    highlightColor: "#6A2F07",
+    textColor: "#7B3F1F",
   },
   {
-    id: "optilla2",
-    name: "OPTILLA2",
+    id: "henina",
+    name: "HENINA",
     descriptionEN:
-      "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
+      "Discover Henina's filled chocolate tablets, where a smooth Végécao shell gives way to a burst of fruity or creamy flavors. Each piece is a delightful surprise, perfect for sharing.",
     descriptionFR:
-      "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image: "/products/moon_slide.png",
-    logo: "/logos/moon_logo.png",
-    bgImage: "/backgrounds/green_bg.png",
-    highlightColor: "#e43726",
+      "Découvrez les tablettes de chocolat fourrées Henina, où une coque lisse en Végécao révèle une explosion de saveurs fruitées ou crémeuses. Chaque morceau est une délicieuse surprise, parfaite à partager.",
+    image: "/products/Henina.png",
+    logo: "/logos/henina_logo.png",
+    bgImage: "/backgrounds/bg-pink.jpg",
+    highlightColor: "#d72a27",
+    textColor: "#7B3F1F",
   },
   {
-    id: "henina3",
-    name: "HENINA3",
+    id: "Napolitano",
+    name: "Napolitano",
     descriptionEN:
-      "Bonbons fruités fourrés à la crème sucrée. Un plaisir pour les petits et les grands.",
+      "Indulge in Napolitano's soft candy thickets, offering a uniquely tender texture and vibrant fruit tastes. A playful and colorful confectionery that melts in your mouth.",
     descriptionFR:
-      "Pâte à tartiner sans gluten au goût noisette intense, idéale pour toute la famille.",
-    image: "/products/moon_slide.png",
-    logo: "/logos/moon_logo.png",
-    bgImage: "/backgrounds/blue_bg.png",
-    highlightColor: "#d72a27",
+      "Savourez les confiseries tendres Napolitano, offrant une texture unique et des goûts fruités intenses. Une confiserie ludique et colorée qui fond dans la bouche.",
+    image: "/products/NAPOLITANO.png",
+    logo: "/logos/napolitano-logo.png",
+    bgImage: "/backgrounds/bg-blue.png",
+    highlightColor: "#ffffff",
+    textColor: "#ffffff",
+  },
+  {
+    id: "DoyDoy",
+    name: "DoyDoy",
+    descriptionEN:
+      "DoyDoy brings joy with its soft, fruity jelly candies in a rainbow of natural flavors. These light and chewy treats are a fun, gluten-free option for all ages.",
+    descriptionFR:
+      "DoyDoy apporte de la joie avec ses bonbons gélifiés tendres et fruités, disponibles dans un arc-en-ciel de saveurs naturelles. Ces friandises légères et moelleuses sont une option amusante et sans gluten pour tous les âges.",
+    image: "/products/DOYDOY/doydoy_trimmed.png",
+    logo: "/logos/doydoy-logo.png",
+    bgImage: "/backgrounds/bg-sky.jpg",
+    highlightColor: "#6A2F07",
+    textColor: "#7B3F1F",
   },
 ];
 
@@ -149,7 +155,8 @@ export default function ProductShowcase() {
             <AnimatePresence mode="wait">
               <motion.h2
                 key={current.name + "-name" + currentDescription}
-                className="text-2xl font-semibold"
+                className="md:text-[2vw] text-[6vw] font-semibold"
+                style={{ color: current.textColor }}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
@@ -162,7 +169,8 @@ export default function ProductShowcase() {
             <AnimatePresence mode="wait">
               <motion.p
                 key={current.name + "-description" + currentDescription}
-                className="text-base leading-relaxed"
+                className="text-base leading-relaxed md:h-[12vw] h-[18vw]"
+                style={{ color: current.textColor }}
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
@@ -180,7 +188,7 @@ export default function ProductShowcase() {
                 key={current.image}
                 src={current.image}
                 alt={current.name}
-                className="absolute inset-0 m-auto max-w-full max-h-full object-contain rounded-4xl"
+                className="absolute  right-0 left-0 md:left-auto top-0 bottom-0   m-auto max-w-full max-h-full md:max-h-none  md:w-[70%]  object-contain rounded-4xl"
                 variants={fadeVariants}
                 initial="initial"
                 animate="animate"
@@ -193,9 +201,9 @@ export default function ProductShowcase() {
         {/* Brand Selector */}
         <div className="mt-8 text-white px-4 md:px-0">
           <h3 className="text-base font-extrabold mb-3 tracking-wide opacity-80 text-white/80">
-            NOS MARQUES
+            {t("marques")}
           </h3>
-          <div className="flex gap-4  justify-between flex-wrap md:flex-nowrap">
+          <div className="grid md:grid-cols-6 grid-cols-3 gap-4  justify-between flex-wrap md:flex-nowrap">
             {products.map((product) => (
               <button
                 key={product.id}
@@ -205,7 +213,7 @@ export default function ProductShowcase() {
                 <img
                   src={product.logo}
                   alt={product.name}
-                  className="w-[80%] h-full object-contain"
+                  className="md:w-[80%] h-full object-contain"
                 />
               </button>
             ))}

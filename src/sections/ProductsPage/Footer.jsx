@@ -18,8 +18,8 @@ export default function Footer() {
           <h2 className="text-3xl md:text-[50px] font-extrabold block md:hidden">KAOUAFOOD</h2>
 
           {/* Left: Logo and Map */}
-          <div className="flex-col gap-4 w-[40%] hidden md:flex">
-            <h2 className="text-3xl md:text-[50px] font-extrabold">
+          <div className="flex-col gap-4 w-[40%] hidden md:flex relative">
+            <h2 className="text-3xl md:text-[4.5vw] leading-none font-extrabold">
               KAOUAFOOD
             </h2>
             <img
@@ -27,7 +27,7 @@ export default function Footer() {
               alt="Map"
               className="rounded-md object-cover h-[15vw]"
             />
-            <div className="bg-[#b0133b] text-white text-sm md:text-[0.7vw] px-3 py-2 rounded-xl shadow-xl font-semibold -translate-y-7">
+            <div className="bg-[#b0133b] text-white text-sm md:text-[0.7vw] px-3 py-2 rounded-md shadow-xl font-semibold absolute bottom-0">
               Adresse : Domaine Halimi Property N°260 lot 193 Section 03 local
               B, Hamadi W.Boumerdes – Algeria
             </div>
@@ -42,13 +42,13 @@ export default function Footer() {
               <p>
                 tel.
                 <br />
-                +213 XXX XXX XXX
+                +213 550 46 32 44
               </p>
               <p className="mt-2">
                 mail.
                 <br />
                 <a href="mailto:contact@kawafood.com" className="underline">
-                  contact@kawafood.com
+                  contact@kaouafood.dz
                 </a>
               </p>
             </div>
@@ -57,7 +57,7 @@ export default function Footer() {
               <h3 className="font-bold mt-4 md:text-[1.4vw]">
                 Mentions Légales
               </h3>
-              <p>cc © 2025 Kawafood</p>
+              <p>cc © 2025 Kaouafood</p>
               <p className="text-sm text-white mt-1">
                 moon.inc
                 <br />
@@ -72,27 +72,23 @@ export default function Footer() {
               <h3 className="font-bold mb-1 md:text-[1.4vw]">Navigation</h3>
               <ul className="space-y-1">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/" className="hover:underline">
                     Home
                   </a>
                 </li>
+                
                 <li>
-                  <a href="#" className="hover:underline">
-                    Complex
+                  <a href="/produits" className="hover:underline">
+                    produits
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Nos produits
+                  <a href="/carriere" className="hover:underline">
+                    Carriere
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
-                    Fournisseurs
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/contact" className="hover:underline">
                     Contact
                   </a>
                 </li>

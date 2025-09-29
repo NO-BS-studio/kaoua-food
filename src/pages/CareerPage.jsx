@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BiArrowBack } from "react-icons/bi";
 import { FlagButton } from "../components/Navbar";
 import MobileNav from "../components/MobileNav";
+import Footer from "../sections/ProductsPage/Footer";
+
 const jobs = [
   {
     title: "Expert Comptable",
@@ -46,7 +48,6 @@ const jobs = [
     missions: ["Gestion de l'agenda", "Accueil et communication"],
     profile: ["Bonne communication", "Organisation"],
   },
-
 ];
 
 export default function CareerPage() {
@@ -54,11 +55,11 @@ export default function CareerPage() {
   const [showDetailsMobile, setShowDetailsMobile] = useState(false);
 
   return (
-    <div className="flex flex-col md:h-screen  w-full h-[100vh] bg-[#faf7f0] ">
-        <MobileNav/>
+    <div className="flex flex-col    w-full  bg-[#faf7f0] ">
+      <MobileNav />
       <div className="flex ">
         {/* LEFT SIDE: JOB LIST */}
-        <div className="md:w-[60vw] h-screen w-full  md:overflow-y-auto overflow-y-scroll flex flex-col gap-[2vw] p-[3vw] md:p-[2vw]">
+        <div className="md:w-[60vw] w-full md:h-[50vw]  md:overflow-y-auto overflow-y-scroll flex flex-col gap-[2vw] p-[3vw] md:p-[2vw]">
           <div className="md:mb-[2vw] mb-[5vw] flex w-full md:justify-start justify-center items-center">
             <img src="/logos/kaoua_logo.png" alt="Logo" className="" />
           </div>
@@ -191,6 +192,7 @@ export default function CareerPage() {
           )}
         </AnimatePresence>
       </div>
+      <Footer />
     </div>
   );
 }

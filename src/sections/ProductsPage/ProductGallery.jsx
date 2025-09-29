@@ -53,7 +53,7 @@ export default function ProductGallery({ products }) {
         {products.map((product, index) => (
           <ScrollLink
             key={product.id}
-            className="relative flex overflow-y-visible md:h-[10vw] h-[40vw] grow z-20 "
+            className="relative flex overflow-y-visible md:h-[10vw] w-full  h-[40vw]  grow z-20 "
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => handleSelect(product)}
@@ -63,7 +63,7 @@ export default function ProductGallery({ products }) {
             offset={-300}
           >
             <motion.div
-              className="  rounded-2xl shadow-xl p-4 cursor-pointer z-30 bg-[#FFE9C2]"
+              className="  rounded-2xl shadow-xl p-4 cursor-pointer w-full z-30 bg-[#FFE9C2]"
               style={{ backgroundColor: product.bgColor }}
               whileHover={{ scale: 1.05 }}
             >

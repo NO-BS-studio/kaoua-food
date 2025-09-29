@@ -208,7 +208,7 @@ export default function ProductShowcase() {
               <button
                 key={product.id}
                 onClick={() => handleChangeProduct(product.id)}
-                className="md:w-fit w-[20vw] md:h-30 h-20 bg-white/10 backdrop-blur-md rounded-xl p-3 flex flex-grow flex-col items-center justify-center hover:bg-white/20 transition"
+                className="md:w-full md:h-30 h-20 bg-white/10 backdrop-blur-md rounded-xl p-3 flex flex-grow flex-col items-center justify-center hover:bg-white/20 transition"
               >
                 <img
                   src={product.logo}

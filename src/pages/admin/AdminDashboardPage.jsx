@@ -7,7 +7,7 @@ export default function AdminDashboardPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:3000/jobs")
+    fetch("/api/jobs")
       .then((res) => res.json())
       .then(setJobs)
       .catch((err) => console.error("Failed to load jobs:", err));
@@ -17,7 +17,7 @@ export default function AdminDashboardPage() {
     const confirmed = window.confirm("Are you sure you want to delete this job?");
     if (!confirmed) return;
 
-    const res = await fetch(`http://localhost:3000/jobs/${id}`, {
+    const res = await fetch(`/api/jobs/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${getToken()}`,

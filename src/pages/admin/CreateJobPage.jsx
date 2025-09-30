@@ -31,7 +31,7 @@ export default function CreateJobPage() {
       profile: profile.filter((p) => p.trim() !== ""),
     };
 
-    await fetch("http://localhost:3000/jobs", {
+    await fetch("/api/jobs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

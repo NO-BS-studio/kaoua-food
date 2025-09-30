@@ -13,7 +13,7 @@ export default function PrivateRoute({ children }) {
       return;
     }
 
-    fetch("http://localhost:3000/auth/verify", {
+    fetch("/api/auth/verify", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -10,7 +10,7 @@ export default function MetierCards() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await fetch("http://localhost:3000/jobs"); // adjust endpoint if different
+        const res = await fetch("/api/jobs"); // adjust endpoint if different
         if (!res.ok) throw new Error("Failed to fetch jobs");
         const data = await res.json();
         setJobs(data);

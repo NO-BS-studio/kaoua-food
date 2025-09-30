@@ -13,7 +13,7 @@ export default function EditJobPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/jobs/${id}`)
+    fetch(`/api/jobs/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setTitle(data.title || "");
@@ -47,7 +47,7 @@ export default function EditJobPage() {
       profile: profile.filter((p) => p.trim() !== ""),
     };
 
-    const res = await fetch(`http://localhost:3000/jobs/${id}`, {
+    const res = await fetch(`/api/jobs/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

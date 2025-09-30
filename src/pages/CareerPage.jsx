@@ -14,7 +14,7 @@ export default function CareerPage() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await fetch("http://localhost:3000/jobs"); // <-- update endpoint if needed
+        const response = await fetch("/api/jobs"); // <-- update endpoint if needed
         if (!response.ok) {
           throw new Error("Failed to fetch jobs");
         }

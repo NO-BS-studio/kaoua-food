@@ -34,7 +34,7 @@ function DirectorPanel() {
         <h2 className="md:text-[5vw] text-[8vw] font-bold text-black uppercase">
           {t("homePage.section2.title")}{" "}
         </h2>
-        <p className="md:text-[2vw] text-[3vw] whitespace-pre-wrap">
+        <p className="md:text-[2vw] text-[4vw] whitespace-pre-wrap">
           {t("homePage.section2.paragraph")}{" "}
         </p>
       </div>
@@ -98,7 +98,7 @@ function HistoryPanel() {
         <div className="uppercase whitespace-pre absolute bg-orange-400 bottom-[1vw] left-[-4vw] py-[0.5vw] pl-[1.5vw] pr-[3vw] rounded-xl text-white text-[1vw] font-bold leading-none rotate-3">
           {t("homePage.section3.origines")}
         </div>
-        <p className="md:text-[1.6vw] text-[1.8vw] leading-none pl-[33%] md:py-[2vw]">
+        <p className="md:text-[1.6vw] text-[2vw] leading-none pl-[33%] md:py-[2vw]">
           {t("homePage.section3.p2")}
         </p>
       </div>

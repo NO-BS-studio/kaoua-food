@@ -19,21 +19,21 @@ export default function ScrollCards() {
     },
     {
       id: 2,
-      image: "/mosaic/Rectangle 57.png",
+      image: "/mosaic/Rectangle 42.png",
       title: t("homePage.section4.engagements.1.title"),
       badge: "QUALITÉ",
       description: t("homePage.section4.engagements.1.paragraph"),
     },
     {
       id: 3,
-      image: "/mosaic/Rectangle 57.png",
+      image: "/mosaic/Rectangle 53.png",
       title: t("homePage.section4.engagements.2.title"),
       // badge: "R&D",
       description: t("homePage.section4.engagements.2.paragraph"),
     },
     {
       id: 3,
-      image: "/mosaic/Rectangle 57.png",
+      image: "/mosaic/Rectangle 52.png",
       title: t("homePage.section4.engagements.3.title"),
       // badge: "R&D",
       description: t("homePage.section4.engagements.3.paragraph"),
@@ -51,7 +51,7 @@ export default function ScrollCards() {
         {cards.map((card) => (
           <div
             key={card.id}
-            className="flex-shrink-0 w-[90vw] md:w-[70vw] md:h-[40vw] h-[55vw] bg-white rounded-xl shadow overflow-hidden snap-center my-[1vw] select-none cursor-grab"
+            className="flex-shrink-0 w-[90vw] md:w-[70vw] md:h-[40vw] h-[55vw] bg-white rounded-4xl shadow overflow-hidden snap-center my-[1vw] select-none cursor-grab"
           >
             <div className="flex flex-row h-full">
               {/* Image */}

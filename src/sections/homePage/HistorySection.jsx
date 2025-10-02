@@ -89,26 +89,26 @@ function HistoryPanel() {
       </div>
 
       {/* Row 3: Jar + Text */}
-      <div className="bg-white rounded-xl p-4 shadow col-span-3  flex relative order-5 md:order-none">
+      <div className="bg-white rounded-xl p-4 shadow col-span-4  flex relative order-5 md:order-none">
         <img
-          src="/products/moon.png"
+          src="/products/OPTILLA/PATE A TARTINER/OPTILLA 350G_trimmed.png"
           alt=""
-          className="absolute w-[30%] top-[-3vw] left-[2%] -rotate-[5deg]"
+          className="absolute w-[20%] top-[-1vw] left-[2%] -rotate-[5deg]"
         />
         <div className="uppercase whitespace-pre absolute bg-orange-400 bottom-[1vw] left-[-4vw] py-[0.5vw] pl-[1.5vw] pr-[3vw] rounded-xl text-white text-[1vw] font-bold leading-none rotate-3">
           {t("homePage.section3.origines")}
         </div>
-        <p className="md:text-[1.6vw] text-[2vw] leading-none pl-[33%] md:py-[2vw]">
+        <p className="md:text-[2vw] text-[2.5vw] leading-none pl-[25%] md:py-[2vw]">
           {t("homePage.section3.p2")}
         </p>
       </div>
 
       {/* Row 3: Orange Stats Card */}
-      <div className="bg-orange-400 text-black rounded-xl flex flex-col justify-end leading-none items-start md:p-6 p-[3vw] order-6 md:order-none">
+      {/* <div className="bg-orange-400 text-black rounded-xl flex flex-col justify-end leading-none items-start md:p-6 p-[3vw] order-6 md:order-none">
         <p className="text-[3vw] font-extrabold">11</p>
         <p className="text-[3vw] font-extrabold">production</p>
         <p className="text-[2vw] font-extrabold">complexes</p>
-      </div>
+      </div> */}
     </motion.div>
   );
 }
@@ -132,7 +132,7 @@ export default function HistorySection() {
           // showFirst || isMobile
           true ? (
             <>
-              <DirectorPanel />
+              {/* <DirectorPanel /> */}
               {
                 // isMobile
                 true && <HistoryPanel />

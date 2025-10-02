@@ -1,9 +1,9 @@
 {
-  "nav":{
-    "accueuil" : "HOME",
-    "produits" : "PRODUCTS",
-    "carriere" : "CARREER",
-    "contact" : "CONTACT"
+  "nav": {
+    "accueuil": "HOME",
+    "produits": "PRODUCTS",
+    "carriere": "CARREER",
+    "contact": "CONTACT"
   },
   "homePage": {
     "section1": {
@@ -19,13 +19,11 @@
       "title": "HISTORY",
       "p1": "An Algerian company founded in 2011, specialized in the production of agri-food products.",
       "p2": "Renowned for its famous spread Optilla, the Kaoua Food brand quickly became a household name in Algeria. Building on this success, it now offers a wide range of confectionery products combining taste, innovation, and quality.",
-            "origines" :"origins of the\nbrand"
-
-    
+      "origines": "origins of the\nbrand"
     },
     "section4": {
       "title": "OUR\nMISSION",
-      "p1": "Our mission is to offer superior quality products that combine flavor, trust, and accessibility, to meet the daily expectations of our consumers.",
+      "p1": "To offer our customers and consumers high-quality chocolate, confectionery, and biscuit products, driven by the commitment of a passionate team within a responsible company. We are committed to making our products accessible to everyone, including in the most remote areas of our country, acting as a trusted partner in the service of all.",
       "values": [
         {
           "title": "Quality",
@@ -44,6 +42,11 @@
         "title": "Our\nMission",
         "p2": "We aim to make every Kaoua Food product a symbol of trust, innovation, and national pride, enriching consumers’ everyday moments with authenticity and generosity."
       },
+      "orangecard": {
+        "title": "our\nvalues",
+        "p2": "Our core values guide our decisions, our behavior, and our long-term development:\n· Customer orientation\n· Employee commitment\n· Sustainable performance\n· Corporate citizenship\n· Compliance with international standards"
+      },
+
       "engagements": [
         {
           "title": "Manufacturing Process",
@@ -72,14 +75,18 @@
   "contact": {
     "title": "Contact",
     "description": "Got a question about our products or just want to say hello? We'd love to hear from you! Reach out to our friendly customer service team via phone, email, or the contact form.",
-    "form" : "Contact form",
-    "envoyer" : "SEND"
+    "form": "Contact form",
+    "envoyer": "SEND"
+  },
+  "catalogue": {
+    "title": "NOTRE\nCATALOGUE",
+    "subtitle": "téléchargez notre catalogue produit en PDF",
+    "button": "TELECHARGER LA CERTIFICATION"
   },
 
-  "vedettes" : "OUR STARS",
+  "vedettes": "OUR STARS",
 
-  "nosProduits" : "OUR PRODUCTS",
+  "nosProduits": "OUR PRODUCTS",
 
-  "marques" : "OUR BRANDS"
-
+  "marques": "OUR BRANDS"
 }

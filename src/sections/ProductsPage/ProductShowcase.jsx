@@ -5,22 +5,22 @@ import Navbar from "../../components/Navbar";
 
 const products = [
   {
-    id: "optilla",
+    id: "OPTILLA",
     name: "OPTILLA",
     descriptionEN:
       "A versatile range of creamy chocolate spreads, filled chocolates, and biscuits. Optilla offers classic, indulgent tastes like hazelnut and caramel for everyday moments of sweetness.",
     descriptionFR:
       "Une gamme polyvalente de pâtes à tartiner au chocolat crémeuses, chocolats fourrés et biscuits. Optilla propose des saveurs classiques et gourmandes comme la noisette et le caramel pour des moments de douceur au quotidien.",
     images: [
-      "/slides/OPTILLA.png",
-      "/slides/bescuit optella.png",
-      "/slides/CARAMEL 500G 3.png",
-      "/slides/Chocolate Amonde.png",
-      "/slides/Chocolate pate a glacer.png",
-      "/slides/chocolate_bar 7.png",
-      "/slides/madlane 01.png",
-      "/slides/Snack Bag OPTELLA.png",
-      "/slides/OPTELLA STECK.png",
+      "/slides/Asset 2@2x.png",
+      "/slides/Asset 3@2x.png",
+      "/slides/Asset 7@2x.png",
+      "/slides/Asset 9@2x.png",
+      "/slides/Asset 10@2x.png",
+      "/slides/Asset 11@2x.png",
+      "/slides/Asset 12@2x.png",
+      "/slides/Asset 13@2x.png",
+      "/slides/Asset 14@2x.png",
     ],
     logo: "/logos/optilla_logo.png",
     bgImage: "/backgrounds/bg-red.jpg",
@@ -28,65 +28,65 @@ const products = [
     textColor: "#ffffff",
   },
   {
-    id: "Moon (Mon Excellence)",
+    id: "MOON",
     name: "Moon (Mon Excellence)",
     descriptionEN:
       "MOON EXCELLENCE defines premium quality with its rich, gourmet hazelnut spreads. Made with 13% real hazelnuts, it's the ultimate indulgence for the most discerning palates.",
     descriptionFR:
       "MOON EXCELLENCE définit la qualité premium avec ses pâtes à tartiner gourmandes à la noisette. Composées de 13% de véritables noisettes, elles représentent l’indulgence ultime pour les palais les plus exigeants.",
-    images: ["/slides/moon patte 02.png", "/slides/moon buscuit_02.png"],
+    images: ["/slides/Asset 5@2x.png", "/slides/Asset 6@2x.png"],
     logo: "/logos/moon_logo.png",
     bgImage: "/backgrounds/bg-yellow.jpg",
     highlightColor: "#d6b08a",
     textColor: "#ffffff",
   },
   {
-    id: "banado",
+    id: "BANADO",
     name: "banado",
     descriptionEN:
       "Banado specializes in high-quality compound coatings in dark, milk, and white chocolate variations. Ideal for baking, confectionery, or simply enjoying as a delicious snack.",
     descriptionFR:
       "Banado est spécialisé dans les enrobages composés de haute qualité, déclinés en chocolat noir, au lait et blanc. Idéal pour la pâtisserie, la confiserie ou simplement à déguster comme un en-cas délicieux.",
-    images: ["/slides/SCENE BANADO  CATALOGUE.png"],
+    images: ["/slides/Asset 1@2x.png"],
     logo: "/logos/banado_logo.png",
     bgImage: "/backgrounds/bg-light-blue.jpg",
     highlightColor: "#6A2F07",
     textColor: "#7B3F1F",
   },
   {
-    id: "henina",
+    id: "HENINA",
     name: "HENINA",
     descriptionEN:
       "Discover Henina's filled chocolate tablets, where a smooth Végécao shell gives way to a burst of fruity or creamy flavors. Each piece is a delightful surprise, perfect for sharing.",
     descriptionFR:
       "Découvrez les tablettes de chocolat fourrées Henina, où une coque lisse en Végécao révèle une explosion de saveurs fruitées ou crémeuses. Chaque morceau est une délicieuse surprise, parfaite à partager.",
-    images: ["/slides/HNINA.png"],
+    images: ["/slides/Asset 8@2x.png"],
     logo: "/logos/henina_logo.png",
     bgImage: "/backgrounds/bg-pink.jpg",
     highlightColor: "#d72a27",
     textColor: "#7B3F1F",
   },
   {
-    id: "Napolitano",
+    id: "NAPOLITANO",
     name: "Napolitano",
     descriptionEN:
       "Indulge in Napolitano's soft candy thickets, offering a uniquely tender texture and vibrant fruit tastes. A playful and colorful confectionery that melts in your mouth.",
     descriptionFR:
       "Savourez les confiseries tendres Napolitano, offrant une texture unique et des goûts fruités intenses. Une confiserie ludique et colorée qui fond dans la bouche.",
-    images: ["/slides/NAPOLITANA.png"],
+    images: ["/slides/Asset 4@2x.png"],
     logo: "/logos/napolitano-logo.png",
     bgImage: "/backgrounds/bg-blue.png",
     highlightColor: "#ffffff",
     textColor: "#ffffff",
   },
   {
-    id: "DoyDoy",
+    id: "DOYDOY",
     name: "DoyDoy",
     descriptionEN:
       "DoyDoy brings joy with its soft, fruity jelly candies in a rainbow of natural flavors. These light and chewy treats are a fun, gluten-free option for all ages.",
     descriptionFR:
       "DoyDoy apporte de la joie avec ses bonbons gélifiés tendres et fruités, disponibles dans un arc-en-ciel de saveurs naturelles. Ces friandises légères et moelleuses sont une option amusante et sans gluten pour tous les âges.",
-    images: ["/products/DOYDOY/doydoy_trimmed.png"],
+    images: ["/products/DOYDOY/doy doy bag_trimmed.png"],
     logo: "/logos/doydoy-logo.png",
     bgImage: "/backgrounds/bg-sky.jpg",
     highlightColor: "#6A2F07",
@@ -100,7 +100,7 @@ const fadeVariants = {
   exit: { opacity: 0, transition: { duration: 0.5 } },
 };
 
-export default function ProductShowcase() {
+export default function ProductShowcase({ onBrandSelect }) {
   const [index, setIndex] = useState(0); // current product
   const [imageIndex, setImageIndex] = useState(0); // current image of product
   const current = products[index];
@@ -115,7 +115,9 @@ export default function ProductShowcase() {
   useEffect(() => {
     const interval = setInterval(() => {
       setImageIndex((prev) => (prev + 1) % current.images.length);
-    }, 1500);
+    }, 3000);
+    onBrandSelect(current.id);
+
     return () => clearInterval(interval);
   }, [current]); // reset when product changes
 
@@ -196,13 +198,13 @@ export default function ProductShowcase() {
           </div>
 
           {/* Product Image (cycled) */}
-          <div className="md:w-[60%] w-full h-[30vh] relative ">
+          <div className="md:w-[60%] w-full md:h-[40vh] h-[30vh] relative ">
             <AnimatePresence mode="sync">
               <motion.img
                 key={current.images[imageIndex]} // ✅ cycle images
                 src={current.images[imageIndex]}
                 alt={current.name}
-                className="absolute right-0 left-0 top-0 bottom-0 m-auto max-w-full max-h-full md:w-[70%] object-contain rounded-4xl"
+                className="absolute right-0 left-0 top-0 bottom-0 m-auto max-w-full max-h-full md:w-[70% object-contain rounded-4xl"
                 variants={fadeVariants}
                 initial="initial"
                 animate="animate"

@@ -16,7 +16,7 @@ export default function MissionSection() {
           <h2 className="md:text-[5vw] whitespace-pre text-[10vw] font-extrabold text-white leading-tight">
             {t("homePage.section4.title")}
           </h2>
-          <p className="mt-[1.5vw] md:text-[1.3vw] text-[2.5vw] leading-relaxed text-white/90 max-w-[90%]">
+          <p className="mt-[1.5vw] md:text-[1.3vw] text-[2.5vw] leading-relaxed text-white/90 max-w-[90%] text-justify">
             {t("homePage.section4.p1")}{" "}
           </p>
         </div>
@@ -65,6 +65,14 @@ export default function MissionSection() {
           </p>
           <h2 className="text-[5vw] uppercase whitespace-pre md:flex hidden  font-extrabold text-white leading-none">
             {t("homePage.section4.redcard.title")}
+          </h2>
+        </div>
+        <div className="col-span-3 bg-[#FF7612] whitespace-pre-wrap text-white rounded-xl mt-[3vw] flex flex-col md:flex-row justify-between items-center p-[2vw] gap-[2vw]">
+          <p className="md:text-[2vw] text-[3vw] font-extralight leading-none md:max-w-[70%] p-[1vw]">
+            {t("homePage.section4.orangecard.p2")}
+          </p>
+          <h2 className="text-[5vw] uppercase whitespace-pre md:flex hidden  font-extrabold text-white leading-none">
+            {t("homePage.section4.orangecard.title")}
           </h2>
         </div>
       </div>

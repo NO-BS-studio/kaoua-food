@@ -36,7 +36,7 @@ const imagesLayout = [
   ["/mosaic/Rectangle 50.png", "/mosaic/Rectangle 51.png"],
 
   // 3rd column (1 image)
-  ["/mosaic/Rectangle 73.png"],
+  ["/slides/Asset 2@2x.png"],
 
   // 4th column (1 image)
   ["/mosaic/Rectangle 53.png"],
@@ -55,9 +55,9 @@ const imagesLayout = [
 
   // 9th column (3 images)
   [
-    "/mosaic/Rectangle 71.png",
+    "/slides/Asset 11@2x.png",
     "/mosaic/Rectangle 52.png",
-    "/mosaic/Rectangle 42.png",
+    "/slides/Asset 5@2x.png",
   ], // repeated last one if needed
 ];
 
@@ -93,7 +93,7 @@ export default function ImageMosaic() {
                   y: isMobile ? "10vw" : "5vw",
                 },
               }}
-              className="md:w-[8vw] w-[40vw] object-cover rounded-xl shadow-md"
+              className="md:w-[8vw] aspect-[9/12] w-[40vw] object-cover rounded-xl shadow-md"
             />
           ))}
         </div>

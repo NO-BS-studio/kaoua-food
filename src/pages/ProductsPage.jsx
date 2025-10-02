@@ -3,8 +3,15 @@ import Footer from "../sections/ProductsPage/Footer";
 import ProductGallery from "../sections/ProductsPage/ProductGallery";
 import ProductShowcase from "../sections/ProductsPage/ProductShowcase";
 import products from "../data/products";
+import { useState } from "react";
 
 export default function ProductsPage() {
+  const [selectedBrand, setSelectedBrand] = useState(null);
+
+  const brandProducts = selectedBrand
+    ? products.filter((p) => p.brand === selectedBrand)
+    : products;
+
   return (
     <div
       className="bg-[#fffaf0]"
@@ -12,8 +19,11 @@ export default function ProductsPage() {
     >
       <MobileNav />
 
-      <ProductShowcase />
-      <ProductGallery products={products} />
+      <ProductShowcase onBrandSelect={setSelectedBrand} />
+
+      {/* Pass brand-filtered products only */}
+      <ProductGallery products={brandProducts} />
+
       <Footer />
     </div>
   );

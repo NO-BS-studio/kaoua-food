@@ -17,7 +17,7 @@ export default function ContactFormSection() {
               className="rounded-xl object-cover h-full"
             />
             <div className="bg-[#b0133b] text-white text-[3vw] md:text-[1vw] px-3 py-2 rounded-xl shadow-xl font-semibold absolute bottom-0">
-              Adresse : Domaine Halimi Property N°260 lot 193 Section 03 local
+              Adresse : Domaine Halimi propriété N°260 lot 193 Section 03 local
               B, Hamadi W.Boumerdes – Algeria
             </div>
           </div>

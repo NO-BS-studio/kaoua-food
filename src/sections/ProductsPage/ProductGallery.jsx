@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRef } from "react";
 import useIsMobile from "../../utils/isMobile";
 import { Link as ScrollLink } from "react-scroll";
 import { useTranslation } from "react-i18next";
+import { useState, useMemo } from "react";
 
 export default function ProductGallery({ products }) {
   const [selected, setSelected] = useState(null);
@@ -25,9 +25,23 @@ export default function ProductGallery({ products }) {
     }
   };
 
+  const scale = ["scale-50", "scale-75", "scale-100"];
+
+  const [selectedType, setSelectedType] = useState(null);
+
+  // Compute unique types for the current brand’s products
+  const types = useMemo(
+    () => [...new Set(products.map((p) => p.type))],
+    [products]
+  );
+
+  // Apply type filter
+  const visibleProducts = selectedType
+    ? products.filter((p) => p.type === selectedType)
+    : products;
+
   return (
     <motion.div
-      layout
       className="relative  h-fit md:px-[15vw] px-[8vw] py-10 bg-transparent"
       transition={{ duration: 0.4 }}
     >
@@ -37,6 +51,38 @@ export default function ProductGallery({ products }) {
           {t("nosProduits")}
         </h2>
       </div>
+
+      {types.length > 0 && (
+        <div className="flex gap-3  mb-6 overflow-auto">
+          {/* "All" button */}
+          <button
+            onClick={() => setSelectedType(null)}
+            className={`px-4 py-2 rounded-full border transition 
+              ${
+                selectedType === null
+                  ? "bg-black text-white"
+                  : "bg-gray-100 text-black"
+              }`}
+          >
+            Tous
+          </button>
+
+          {types.map((t) => (
+            <button
+              key={t}
+              onClick={() => setSelectedType(t)}
+              className={`px-4 py-2 rounded-full border transition 
+                ${
+                  selectedType === t
+                    ? "bg-black text-white"
+                    : "bg-gray-100 text-black"
+                }`}
+            >
+              {t}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Product scroll row */}
       <div
@@ -50,7 +96,7 @@ export default function ProductGallery({ products }) {
           maskRepeat: "no-repeat",
         }}
       >
-        {products.map((product, index) => (
+        {visibleProducts.map((product, index) => (
           <ScrollLink
             key={product.id}
             className="relative flex overflow-y-visible md:h-[10vw] w-full  h-[40vw]  grow z-20 "
@@ -63,14 +109,16 @@ export default function ProductGallery({ products }) {
             offset={-300}
           >
             <motion.div
-              className="  rounded-2xl shadow-xl p-4 cursor-pointer w-full z-30 bg-[#FFE9C2]"
+              className="  rounded-2xl shadow-xl p-4 cursor-pointer w-full z-30 bg-[#FFE9C2] "
               style={{ backgroundColor: product.bgColor }}
               whileHover={{ scale: 1.05 }}
             >
               <img
                 src={product.image}
                 // alt={product.name}
-                className="  h-full  object-contain mx-auto"
+                className={`h-full object-contain mx-auto ${
+                  product.size ? scale[product.size - 1] : ""
+                }`}
               />
             </motion.div>
 
@@ -150,11 +198,11 @@ export default function ProductGallery({ products }) {
               >
                 {/* Image section */}
                 <div className="relative h-full md:w-[20vw] items-start justify-center flex">
-                  <div className="absolute md:w-[18vw] md:h-[18vw] w-[60vw] h-[60vw] bg-amber-800/80 rotate-[-10deg] rounded-3xl" />
+                  {/* <div className="absolute md:w-[18vw] md:h-[18vw] w-[60vw] h-[60vw] bg-amber-800/80 rotate-[-10deg] rounded-3xl" /> */}
                   <img
                     src={selected.image}
                     alt={selected.name}
-                    className="relative  z-10 md:h-[20vw] h-[60vw] md:top-0 top-[-5vw]  w-[40vw] object-contain"
+                    className="relative  z-10 md:h-[20vw] h-[60vw] md:top-[-2vw] top-[-5vw]  w-[40vw] object-contain"
                   />
                 </div>
 
@@ -176,6 +224,22 @@ export default function ProductGallery({ products }) {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <div className=" h-full w-full flex flex-col items-center text-center justify-end gap-[1.5vw] py-[2vw] leading-none">
+        <h1 className="md:text-[5vw] text-[10vw] font-bold whitespace-pre uppercase">
+          {t("catalogue.title")}{" "}
+        </h1>
+        <p className="md:text-[1.1vw] text-[2.2vw]">
+          {" "}
+          {t("catalogue.subtitle")}{" "}
+        </p>
+        <a
+          href="/produits"
+          className="bg-[#D70F38] text-white font-semibold rounded-full md:px-[2vw] px-[4vw] py-[1vw] md:py-[0.5vw] md:text-[1.2vw] text-[2.4vw] "
+        >
+          {t("catalogue.button")}{" "}
+        </a>
+      </div>
     </motion.div>
   );
 }

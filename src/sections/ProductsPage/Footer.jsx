@@ -28,7 +28,7 @@ export default function Footer() {
               className="rounded-md object-cover h-[15vw]"
             />
             <div className="bg-[#b0133b] text-white text-sm md:text-[0.7vw] px-3 py-2 rounded-md shadow-xl font-semibold absolute bottom-0">
-              Adresse : Domaine Halimi Property N°260 lot 193 Section 03 local
+              Adresse : Domaine Halimi propriété N°260 lot 193 Section 03 local
               B, Hamadi W.Boumerdes – Algeria
             </div>
           </div>
@@ -42,7 +42,9 @@ export default function Footer() {
               <p>
                 tel.
                 <br />
-                +213 550 46 32 44
+                0560 04 05 37
+                <br />
+                0562 67 80 06 
               </p>
               <p className="mt-2">
                 mail.

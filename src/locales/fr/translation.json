@@ -1,10 +1,9 @@
 {
-
-  "nav":{
-    "accueuil" : "ACCUEUIL",
-    "produits" : "PRODUITS",
-    "carriere" : "CARRIERE",
-    "contact" : "CONTACT"
+  "nav": {
+    "accueuil": "ACCUEUIL",
+    "produits": "PRODUITS",
+    "carriere": "CARRIERE",
+    "contact": "CONTACT"
   },
   "homePage": {
     "section1": {
@@ -24,7 +23,7 @@
     },
     "section4": {
       "title": "NOTRE\nMISSION",
-      "p1": "Notre mission est d’offrir des produits de qualité supérieure, alliant saveur, confiance et accessibilité, pour répondre aux attentes quotidiennes de nos consommateurs.",
+      "p1": "Offrir à nos clients et consommateurs des produits de chocolat, de confiserie et de biscuiterie de haute qualité, portés par l’engagement d’une équipe passionnée au sein d’une entreprise responsable. Nous nous engageons à rendre nos produits accessibles à tous, y compris dans les zones les plus éloignées de notre pays, en agissant comme un partenaire de confiance au service de chacun ",
       "values": [
         {
           "title": "Qualité",
@@ -43,6 +42,11 @@
         "title": "Notre\nmission",
         "p2": "Nous visons à faire de chaque produit Kaoua Food un symbole de confiance, d’innovation et de fierté nationale, en enrichissant les moments de vie des consommateurs avec authenticité et générosité."
       },
+      "orangecard": {
+        "title": "nos\nvaleurs",
+        "p2": "Nos valeurs fondamentales orientent nos décisions, nos comportements et notre développement à long terme :\n· Orientation client\n· Engagement du personnel\n· Performance durable\n· Citoyenneté d’entreprise\n· Conformité aux standards internationaux"
+      },
+
       "engagements": [
         {
           "title": "Processus de fabrication",
@@ -72,6 +76,11 @@
     "description": "Vous avez une question sur nos produits ou simplement envie de nous dire bonjour ? Nous serions ravis de vous lire ! Contactez notre équipe de service client sympathique par téléphone, par e-mail ou via le formulaire de contact.",
     "form": "Contact form",
     "envoyer": "SEND"
+  },
+  "catalogue": {
+    "title": "NOTRE\nCATALOGUE",
+    "subtitle": "téléchargez notre catalogue produit en PDF",
+    "button": "TELECHARGER LA CERTIFICATION"
   },
 
   "vedettes": "NOS VEDETTES",

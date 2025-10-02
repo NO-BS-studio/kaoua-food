@@ -30,13 +30,19 @@ export default function ScrollCards() {
       title: t("homePage.section4.engagements.2.title"),
       // badge: "R&D",
       description: t("homePage.section4.engagements.2.paragraph"),
+      file: "/files/certificat.pdf",
+      fileName: "certificat.pdf",
+      fileMessage: t("homePage.certification"),
     },
     {
-      id: 3,
+      id: 4,
       image: "/mosaic/Rectangle 52.png",
       title: t("homePage.section4.engagements.3.title"),
       // badge: "R&D",
       description: t("homePage.section4.engagements.3.paragraph"),
+      file: "/files/data-protection.pdf",
+      fileName: "data-protection.pdf",
+      fileMessage: t("homePage.certification"),
     },
     // ...add 3 more cards
   ];
@@ -51,7 +57,7 @@ export default function ScrollCards() {
         {cards.map((card) => (
           <div
             key={card.id}
-            className="flex-shrink-0 w-[90vw] md:w-[70vw] md:h-[40vw] h-[55vw] bg-white rounded-4xl shadow overflow-hidden snap-center my-[1vw] select-none cursor-grab"
+            className="flex-shrink-0  w-[90vw] md:w-[70vw] md:h-[40vw] h-[55vw bg-white rounded-4xl shadow overflow-hidden snap-center my-[1vw] select-none cursor-grab"
           >
             <div className="flex flex-row h-full">
               {/* Image */}
@@ -65,20 +71,33 @@ export default function ScrollCards() {
               </div>
 
               {/* Content */}
-              <div className="w-1/2 p-[2vw] flex flex-col justify-start md:gap-[3vw] gap-[6vw]">
-                <div className="md:text-[4vw] text-[6vw] leading-none font-bold text-gray-900 relative">
-                  {card.title}
+              <div className="w-1/2 p-[2vw] flex flex-col justify-between md:gap-[3vw] gap-[6vw]">
+                <div>
+                  <div className="md:text-[4vw] text-[6vw] leading-none font-bold text-gray-900 relative">
+                    {card.title}
 
-                  {card.badge && (
-                    <span className="absolute bottom-[-2vw] left-0 bg-orange-500 text-white text-[1vw] px-[1vw] py-[0.3vw] rounded-md mt-[0.5vw] rotate-[-3deg] w-fit">
-                      {card.badge}
-                    </span>
+                    {card.badge && (
+                      <span className="absolute bottom-[-2vw] left-0 bg-orange-500 text-white text-[1vw] px-[1vw] py-[0.3vw] rounded-md mt-[0.5vw] rotate-[-3deg] w-fit">
+                        {card.badge}
+                      </span>
+                    )}
+                  </div>
+
+                  <p className="mt-[2vw] md:text-[1.7vw] text-[2.5vw] leading-tight text-black/40 ">
+                    {card.description}
+                  </p>
+                </div>
+                <div className="flex justify-center text-center justify-self-end">
+                  {card.file && (
+                    <a
+                      href={card.file}
+                      download={card.fileName}
+                      className="bg-[#D70F38] md:w-full w-[80%] text-white font-semibold rounded-full md:px-[2vw] px-[4vw] py-[1vw] md:py-[0.5vw] md:text-[1.2vw] text-[2.4vw] "
+                    >
+                      {card.fileMessage}
+                    </a>
                   )}
                 </div>
-
-                <p className="mt-[1vw] md:text-[1.7vw] text-[2.5vw] leading-tight text-black/40 ">
-                  {card.description}
-                </p>
               </div>
             </div>
           </div>

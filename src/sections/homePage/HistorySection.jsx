@@ -54,7 +54,7 @@ function HistoryPanel() {
       animate="visible"
       exit="exit"
       transition={{ duration: 1 }}
-      className="w-[80vw]  grid grid-cols-[1fr_1fr_1fr_1fr] md:grid-rows-[14vw_14vw_14vw] grid-rows-[20vw_20vw_20vw] md:gap-6 gap-2 my-[5vw] md:my-0"
+      className="w-[80vw]  grid grid-cols-[1fr_1fr_1fr_1fr] md:grid-rows-[14vw_14vw_auto] grid-rows-[20vw_20vw_auto] md:gap-6 gap-2 my-[5vw] md:my-0"
     >
       {/* Row 1: Title + Subtitle */}
       <div className="md:col-span-2 col-span-4 leading-none order-1 md:order-none">
@@ -93,12 +93,12 @@ function HistoryPanel() {
         <img
           src="/products/OPTILLA/PATE A TARTINER/OPTILLA 350G_trimmed.png"
           alt=""
-          className="absolute w-[20%] top-[-1vw] left-[2%] -rotate-[5deg]"
+          className="absolute w-[25%] md:top-[5vw] top-[15vw] md:left-0 left-[1vw] -rotate-[5deg]"
         />
         <div className="uppercase whitespace-pre absolute bg-orange-400 bottom-[1vw] left-[-4vw] py-[0.5vw] pl-[1.5vw] pr-[3vw] rounded-xl text-white text-[1vw] font-bold leading-none rotate-3">
           {t("homePage.section3.origines")}
         </div>
-        <p className="md:text-[2vw] text-[2.5vw] leading-none pl-[25%] md:py-[2vw]">
+        <p className="md:text-[2vw] text-[2.5vw] leading-none pl-[25%] md:py-[2vw] whitespace-pre-wrap">
           {t("homePage.section3.p2")}
         </p>
       </div>

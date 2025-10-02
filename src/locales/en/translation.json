@@ -18,7 +18,7 @@
     "section3": {
       "title": "HISTORY",
       "p1": "An Algerian company founded in 2011, specialized in the production of agri-food products.",
-      "p2": "Renowned for its famous spread Optilla, the Kaoua Food brand quickly became a household name in Algeria. Building on this success, it now offers a wide range of confectionery products combining taste, innovation, and quality.",
+      "p2": "Kaoua Food is an Algerian company founded in 2011, specialized in the production of agri-food products.\nKnown for its iconic Optilla spread, the brand quickly established itself as a reference in the hearts of Algerian consumers.\n\nBuilding on this success, Kaoua Food expanded its portfolio with a complete range of confectionery, hard candies, and jellies: combining taste, innovation, and consistent quality.\n\nIn 2024, the company launched a premium line of chocolate and biscuits under the MOON brand, meeting the growing demand for quality products accessible to a wide audience.",
       "origines": "origins of the\nbrand"
     },
     "section4": {
@@ -66,6 +66,8 @@
         }
       ]
     },
+    "certification": "DOWNLOAD THE CERTIFICATE",
+
     "section5": {
       "title": "Careers",
       "subtitle": "Discover exciting job opportunities at our facilities."

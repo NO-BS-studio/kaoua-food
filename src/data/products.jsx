@@ -227,6 +227,14 @@ const products = [
     brand: "OPTILLA"
   },
   {
+    id: "optilla-biscuit-pistache-xl",
+    name: "Biscuit fourré OPTILLA Chocolat XL",
+    description: "Ingrédients : Pâte : Farine de blé tendre, sucre, matières grasses végétales (huile de palme non hydrogénée), eau, sucre inverti (sucre, eau, additifs alimentaires : acidifiant (acide citrique E330)), poudre (de lait entier et/ou lactosérum), sel, additifs alimentaires : agents levants (carbonate d'ammonium E503 (ii), carbonate de sodium E500 (ii), diphosphate disodique E450(i)), émulsifiant (lécithine de soja E322), arômes artificiels, anti-oxydant (métabisulfite de sodium E223), enzyme. Crème fourrage : sucre, matières grasses végétales (huile de palme non hydrogénée), poudre de cacao naturel et maigre alcalinisée, additifs alimentaires : émulsifiant (lécithine de soja E322), arôme artificiel.",
+    image: "/products/OPTILLA/BISCUITS/optilla pistache.png",
+    type: "BISCUITS",
+    brand: "OPTILLA"
+  },
+  {
     id: "optilla-biscuit-vanille-xl",
     name: "Biscuit fourré OPTILLA Vanille XL",
     description: "Ingrédients : Pâte : Farine de blé tendre, sucre, matières grasses végétales (huile de palme non hydrogénée), eau, sucre inverti (sucre, eau, additifs alimentaires : acidifiant (acide citrique E330)), poudre (de lait entier et/ou lactosérum), sel, additifs alimentaires : agents levants (carbonate d'ammonium E503 (ii), carbonate de sodium E500 (ii), diphosphate disodique E450(i)), émulsifiant (lécithine de soja E322), arômes artificiels, anti-oxydant (métabisulfite de sodium E223), enzyme. Crème fourrage : sucre, matières grasses végétales (huile de palme non hydrogénée), poudre de cacao naturel et maigre alcalinisée, additifs alimentaires : émulsifiant (lécithine de soja E322), arôme artificiel.",
@@ -316,6 +324,14 @@ const products = [
     type: "BISCUITS",
     brand: "MOON"
   },
+  {
+    id: "moon-xl-fraise",
+    name: "Biscuit fourré MOON XL Fraise",
+    description: "Ingrédients : Pâte : farine de blé tendre, sucre, matières grasses végétales (huile de palme non hydrogénée), eau, sucre inverti (sucre, eau), acidifiant (acide citrique E330), poudre de lait entier et/ou lactosérum, sel, agents levants (carbonate d'ammonium E503 ii, carbonate de sodium E500 ii, diphosphate disodique E450i), émulsifiant (lécithine de soja E322), arômes artificiels, antioxydant (métabisulfite de sodium E223), enzyme. Crème fourrage : sucre, matières grasses végétales (huile de palme non hydrogénée), poudre de cacao naturel et maigre alcalinisée, émulsifiant (lécithine de soja E322), arôme artificiel.",
+    image: "/products/MOON/MOON XL FRAISE.png",
+    type: "BISCUITS",
+    brand: "MOON"
+  },
 
   // MADELEINES OPTILLA
   {
@@ -346,7 +362,7 @@ const products = [
   // BANADO
   {
     id: "banado-200g",
-    name: "Glaçage original BANADO Blanc 200G",
+    name: "Pâte à tartiner BANADO Blanc 200G",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/200g banado _trimmed.png",
     type: "PATE A TARTINER",
@@ -354,7 +370,7 @@ const products = [
   },
   {
     id: "banado-350g",
-    name: "Glaçage original BANADO Blanc 350G",
+    name: "Pâte à tartiner BANADO Blanc 350G",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/350g banado _trimmed.png",
     type: "PATE A TARTINER",
@@ -362,9 +378,41 @@ const products = [
   },
   {
     id: "banado-700g",
-    name: "Glaçage original BANADO Blanc 700G",
+    name: "Pâte à tartiner BANADO Blanc 700G",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/700 g banado_trimmed.png",
+    type: "PATE A TARTINER",
+    brand: "BANADO"
+  },
+  {
+    id: "banado-1kg",
+    name: "Pâte à tartiner BANADO Blanc 1KG",
+    description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
+    image: "/products/BANADO/700 g banado_trimmed.png",
+    type: "PATE A TARTINER",
+    brand: "BANADO"
+  },
+  {
+    id: "banado-3kg",
+    name: "Pâte à tartiner BANADO Blanc 3KG",
+    description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
+    image: "/products/BANADO/banado 3kg.png",
+    type: "PATE A TARTINER",
+    brand: "BANADO"
+  },
+  {
+    id: "banado-10kg",
+    name: "Pâte à tartiner BANADO Blanc 10KG",
+    description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
+    image: "/products/BANADO/10kg.png",
+    type: "PATE A TARTINER",
+    brand: "BANADO"
+  },
+  {
+    id: "banado-20kg",
+    name: "Pâte à tartiner BANADO Blanc 20KG",
+    description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
+    image: "/products/BANADO/20kg.png",
     type: "PATE A TARTINER",
     brand: "BANADO"
   },

@@ -13,6 +13,9 @@ const products = [
       "Une gamme polyvalente de pâtes à tartiner au chocolat crémeuses, chocolats fourrés et biscuits. Optilla propose des saveurs classiques et gourmandes comme la noisette et le caramel pour des moments de douceur au quotidien.",
     images: [
       "/slides/Asset 2@2x.png",
+      "/slides/Asset 1.png",
+      "/slides/Asset 2.png",
+      "/slides/Asset 3.png",
       "/slides/Asset 3@2x.png",
       "/slides/Asset 7@2x.png",
       "/slides/Asset 9@2x.png",
@@ -34,7 +37,7 @@ const products = [
       "MOON EXCELLENCE defines premium quality with its rich, gourmet hazelnut spreads. Made with 13% real hazelnuts, it's the ultimate indulgence for the most discerning palates.",
     descriptionFR:
       "MOON EXCELLENCE définit la qualité premium avec ses pâtes à tartiner gourmandes à la noisette. Composées de 13% de véritables noisettes, elles représentent l’indulgence ultime pour les palais les plus exigeants.",
-    images: ["/slides/Asset 5@2x.png", "/slides/Asset 6@2x.png"],
+    images: ["/slides/Asset 5@2x.png", "/slides/Asset 5.png"],
     logo: "/logos/moon_logo.png",
     bgImage: "/backgrounds/bg-yellow.jpg",
     highlightColor: "#d6b08a",
@@ -47,7 +50,7 @@ const products = [
       "Banado specializes in high-quality compound coatings in dark, milk, and white chocolate variations. Ideal for baking, confectionery, or simply enjoying as a delicious snack.",
     descriptionFR:
       "Banado est spécialisé dans les enrobages composés de haute qualité, déclinés en chocolat noir, au lait et blanc. Idéal pour la pâtisserie, la confiserie ou simplement à déguster comme un en-cas délicieux.",
-    images: ["/slides/Asset 1@2x.png"],
+    images: ["/slides/Asset 1@2x.png", "/slides/Asset 4.png"],
     logo: "/logos/banado_logo.png",
     bgImage: "/backgrounds/bg-light-blue.jpg",
     highlightColor: "#6A2F07",
@@ -116,7 +119,6 @@ export default function ProductShowcase({ onBrandSelect }) {
     const interval = setInterval(() => {
       setImageIndex((prev) => (prev + 1) % current.images.length);
     }, 3000);
-    onBrandSelect(current.id);
 
     return () => clearInterval(interval);
   }, [current]); // reset when product changes
@@ -125,6 +127,8 @@ export default function ProductShowcase({ onBrandSelect }) {
     const newIndex = products.findIndex((p) => p.id === id);
     if (newIndex !== -1) {
       setIndex(newIndex);
+      onBrandSelect(id);
+
       setImageIndex(0); // reset to first image
     }
   };
@@ -155,7 +159,7 @@ export default function ProductShowcase({ onBrandSelect }) {
         <Navbar />
 
         <div
-          className="flex-grow flex md:flex-row flex-col items-center justify-between gap-16"
+          className="flex-grow flex md:flex-row flex-col items-center justify-between gap-16 md:h-[30vw]"
           onClick={handleNextProduct}
         >
           {/* Text Block */}
@@ -198,13 +202,13 @@ export default function ProductShowcase({ onBrandSelect }) {
           </div>
 
           {/* Product Image (cycled) */}
-          <div className="md:w-[60%] w-full md:h-[40vh] h-[30vh] relative ">
+          <div className="md:w-[60%] w-full md:h-full h-[30vh] relative ">
             <AnimatePresence mode="sync">
               <motion.img
                 key={current.images[imageIndex]} // ✅ cycle images
                 src={current.images[imageIndex]}
                 alt={current.name}
-                className="absolute right-0 left-0 top-0 bottom-0 m-auto max-w-full max-h-full md:w-[70% object-contain rounded-4xl"
+                className="absolute right-0 left-0 top-0 bottom-0 m-auto max-w-full max-h-full md:h-full object-contain rounded-4xl"
                 variants={fadeVariants}
                 initial="initial"
                 animate="animate"

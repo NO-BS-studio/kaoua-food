@@ -39,7 +39,7 @@
         }
       ],
       "redcard": {
-        "title": "Notre\nmission",
+        "title": "Notre\nvision",
         "p2": "Nous visons à faire de chaque produit Kaoua Food un symbole de confiance, d’innovation et de fierté nationale, en enrichissant les moments de vie des consommateurs avec authenticité et générosité."
       },
       "orangecard": {
@@ -80,9 +80,9 @@
     "envoyer": "SEND"
   },
   "catalogue": {
-    "title": "NOTRE\nCATALOGUE",
-    "subtitle": "téléchargez notre catalogue produit en PDF",
-    "button": "TELECHARGER LA CERTIFICATION"
+    "title": "OUR\nCATALOGUE",
+    "subtitle": "download our products pdf catalogue",
+    "button": "DOWNLOAD THE CATALOGUE"
   },
 
   "vedettes": "NOS VEDETTES",

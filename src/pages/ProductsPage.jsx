@@ -10,7 +10,7 @@ export default function ProductsPage() {
 
   const brandProducts = selectedBrand
     ? products.filter((p) => p.brand === selectedBrand)
-    : products;
+    : [];
 
   return (
     <div

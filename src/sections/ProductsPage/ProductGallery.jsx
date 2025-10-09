@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import useIsMobile from "../../utils/isMobile";
 import { Link as ScrollLink } from "react-scroll";
 import { useTranslation } from "react-i18next";
@@ -25,9 +25,22 @@ export default function ProductGallery({ products }) {
     }
   };
 
+  const filterColors = {
+    OPTILLA: "#EC1C24",
+    MOON: "#AA7D29",
+    BANADO: "#5FA2BC",
+    HENINA: "#FDC6CF",
+    NAPOLITANO: "#1C86C8",
+    DOYDOY: "#1C86C8",
+  };
+
   const scale = ["scale-50", "scale-75", "scale-100"];
 
   const [selectedType, setSelectedType] = useState(null);
+
+  useEffect(() => {
+    setSelectedType(null);
+  }, [products]);
 
   // Compute unique types for the current brand’s products
   const types = useMemo(
@@ -53,30 +66,37 @@ export default function ProductGallery({ products }) {
       </div>
 
       {types.length > 0 && (
-        <div className="flex gap-3  mb-6 overflow-auto">
+        <div className="flex gap-3  mb-6 overflow-auto pb-2">
           {/* "All" button */}
           <button
             onClick={() => setSelectedType(null)}
-            className={`px-4 py-2 rounded-full border transition 
-              ${
+            style={{
+              backgroundColor:
                 selectedType === null
-                  ? "bg-black text-white"
-                  : "bg-gray-100 text-black"
-              }`}
+                  ? "black"
+                  : filterColors[products[0].brand],
+              // color: selectedType === null ? "white" : "black",
+            }}
+            className={`md:px-4 px-3 md:py-2 py-1 md:text-[0.8vw] text-[3vw] rounded-full  transition 
+              ${selectedType === null ? " text-white" : " text-white"}
+              `}
           >
-            Tous
+            TOUS
           </button>
 
           {types.map((t) => (
             <button
               key={t}
               onClick={() => setSelectedType(t)}
-              className={`px-4 py-2 rounded-full border transition 
-                ${
+              style={{
+                backgroundColor:
                   selectedType === t
-                    ? "bg-black text-white"
-                    : "bg-gray-100 text-black"
-                }`}
+                    ? "black"
+                    : filterColors[products[0].brand],
+                // color: selectedType === null ? "white" : "black",
+              }}
+              className={`md:px-4 px-3 md:py-2 py-1 md:text-[0.8vw] text-[3vw] rounded-full  transition 
+                ${selectedType === t ? " text-white" : " text-white"}`}
             >
               {t}
             </button>
@@ -234,7 +254,8 @@ export default function ProductGallery({ products }) {
           {t("catalogue.subtitle")}{" "}
         </p>
         <a
-          href="/produits"
+          href="/files/catalogue.pdf"
+          download="catalogue.pdf"
           className="bg-[#D70F38] text-white font-semibold rounded-full md:px-[2vw] px-[4vw] py-[1vw] md:py-[0.5vw] md:text-[1.2vw] text-[2.4vw] "
         >
           {t("catalogue.button")}{" "}

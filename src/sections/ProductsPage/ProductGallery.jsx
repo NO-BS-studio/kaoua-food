@@ -40,6 +40,7 @@ export default function ProductGallery({ products }) {
 
   useEffect(() => {
     setSelectedType(null);
+    setSelected(products[0]);
   }, [products]);
 
   // Compute unique types for the current brand’s products
@@ -222,7 +223,8 @@ export default function ProductGallery({ products }) {
                   <img
                     src={selected.image}
                     alt={selected.name}
-                    className="relative  z-10 md:h-[20vw] h-[60vw] md:top-[-2vw] top-[-5vw]  w-[40vw] object-contain"
+                    className={`relative  z-10 md:h-[20vw] h-[60vw] md:top-[-2vw] top-[-5vw]  w-[40vw] object-contain 
+                      ${selected.size ? scale[selected.size - 1] : ""}`}
                   />
                 </div>
 

@@ -382,7 +382,7 @@ const products = [
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/700 g banado_trimmed.png",
     type: "PATE A TARTINER",
-    brand: "BANADO"
+    brand: "BANADO",
   },
   {
     id: "banado-1kg",

@@ -37,7 +37,7 @@ const products = [
       "MOON EXCELLENCE defines premium quality with its rich, gourmet hazelnut spreads. Made with 13% real hazelnuts, it's the ultimate indulgence for the most discerning palates.",
     descriptionFR:
       "MOON EXCELLENCE définit la qualité premium avec ses pâtes à tartiner gourmandes à la noisette. Composées de 13% de véritables noisettes, elles représentent l’indulgence ultime pour les palais les plus exigeants.",
-    images: ["/slides/Asset 5@2x.png", "/slides/Asset 5.png"],
+    images: ["/slides/Asset-moon.png", "/slides/Asset 5.png"],
     logo: "/logos/moon_logo.png",
     bgImage: "/backgrounds/bg-yellow.jpg",
     highlightColor: "#d6b08a",
@@ -50,7 +50,7 @@ const products = [
       "Banado specializes in high-quality compound coatings in dark, milk, and white chocolate variations. Ideal for baking, confectionery, or simply enjoying as a delicious snack.",
     descriptionFR:
       "Banado est spécialisé dans les enrobages composés de haute qualité, déclinés en chocolat noir, au lait et blanc. Idéal pour la pâtisserie, la confiserie ou simplement à déguster comme un en-cas délicieux.",
-    images: ["/slides/Asset 1@2x.png", "/slides/Asset 4.png"],
+    images: ["/slides/Asset-banado.png", "/slides/Asset 1@2x.png"],
     logo: "/logos/banado_logo.png",
     bgImage: "/backgrounds/bg-light-blue.jpg",
     highlightColor: "#6A2F07",

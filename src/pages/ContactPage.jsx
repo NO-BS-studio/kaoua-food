@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import ContactFormSection from "../sections/contactPage/ContactForm";
-import ProductionSites from "../sections/contactPage/ProductionSite";
 import ContactHeader from "../sections/contactPage/ContactHeader";
 import MobileNav from "../components/MobileNav";
 
@@ -13,7 +12,6 @@ export default function ContactPage() {
       <MobileNav/>
       <Navbar variant="style2" />
       <ContactHeader />
-      {/* <ProductionSites /> */}
       <ContactFormSection />
     </div>
   );

@@ -67,6 +67,14 @@ const products = [
     brand: "OPTILLA"
   },
   {
+    id: "optilla-sticks-60-noisette",
+    name: "Bâtonnets de chocolat noisette OPTILLA - 60 unités",
+    description: "Ingrédients : Sucre, matières grasses végétales, poudre (cacao, lactosérum et lait entier), pâte de noisettes, sel. Additifs alimentaires : émulsifiant (E322 lécithine de soja), arômes artificiels (noisette, vanilline).",
+    image: "/products/OPTILLA/STICKS/STICKS 60UNITS NOISETTE.png",
+    type: "PATE A TARTINER",
+    brand: "OPTILLA"
+  },
+  {
     id: "optilla-sticks-100",
     name: "Bâtonnets de chocolat OPTILLA - 100 unités",
     description: "Ingrédients : Sucre, matières grasses végétales, poudre (cacao, lactosérum et lait entier), pâte de noisettes, sel. Additifs alimentaires : émulsifiant (E322 lécithine de soja), arômes artificiels (noisette, vanilline).",
@@ -216,6 +224,15 @@ const products = [
     type: "CARAMEL",
     brand: "OPTILLA"
   },
+  {
+    id: "optilla-caramel-2kg",
+    name: "Caramel mou OPTILLA 2KG",
+    description: "Ingrédients : Sirop de glucose, sucre, eau, poudre de lait entier, matières grasses végétales non hydrogénées, sel. Additifs alimentaires : émulsifiant (lécithine de soja E322), conservateur (sorbate de potassium E202), arôme artificiel, épaississant (gomme xanthane E415), acidifiant (acide citrique E330).",
+    image: "/products/OPTILLA/CARAMEL 2KG.png",
+    type: "CARAMEL",
+    brand: "OPTILLA"
+  },
+
 
   // OPTILLA BISCUITS
   {

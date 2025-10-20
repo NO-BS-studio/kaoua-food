@@ -57,7 +57,7 @@ const imagesLayout = [
   [
     "/slides/Asset 11@2x.png",
     "/mosaic/Rectangle 52.png",
-    "/slides/Asset 5@2x.png",
+    "/slides/Asset 5.png",
   ], // repeated last one if needed
 ];
 
@@ -93,7 +93,7 @@ export default function ImageMosaic() {
                   y: isMobile ? "10vw" : "5vw",
                 },
               }}
-              className="md:w-[8vw] aspect-[9/12] w-[40vw] object-cover rounded-xl shadow-md"
+              className="md:max-w-[8vw] aspect-[9/12] max-w-[15vw] object-cover rounded-xl shadow-md"
             />
           ))}
         </div>

@@ -379,7 +379,7 @@ const products = [
   // BANADO
   {
     id: "banado-200g",
-    name: "Pâte à tartiner BANADO Blanc 200G",
+    name: "Pâte à tartiner BANADO 200G",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/200g banado _trimmed.png",
     type: "PATE A TARTINER",
@@ -387,7 +387,7 @@ const products = [
   },
   {
     id: "banado-350g",
-    name: "Pâte à tartiner BANADO Blanc 350G",
+    name: "Pâte à tartiner BANADO 350G",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/350g banado _trimmed.png",
     type: "PATE A TARTINER",
@@ -395,7 +395,7 @@ const products = [
   },
   {
     id: "banado-700g",
-    name: "Pâte à tartiner BANADO Blanc 700G",
+    name: "Pâte à tartiner BANADO 700G",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/700 g banado_trimmed.png",
     type: "PATE A TARTINER",
@@ -403,7 +403,7 @@ const products = [
   },
   {
     id: "banado-1kg",
-    name: "Pâte à tartiner BANADO Blanc 1KG",
+    name: "Pâte à tartiner BANADO 1KG",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/700 g banado_trimmed.png",
     type: "PATE A TARTINER",
@@ -411,7 +411,7 @@ const products = [
   },
   {
     id: "banado-3kg",
-    name: "Pâte à tartiner BANADO Blanc 3KG",
+    name: "Pâte à tartiner BANADO 3KG",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/banado 3kg.png",
     type: "PATE A TARTINER",
@@ -419,7 +419,7 @@ const products = [
   },
   {
     id: "banado-10kg",
-    name: "Pâte à tartiner BANADO Blanc 10KG",
+    name: "Pâte à tartiner BANADO 10KG",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/10kg.png",
     type: "PATE A TARTINER",
@@ -427,7 +427,7 @@ const products = [
   },
   {
     id: "banado-20kg",
-    name: "Pâte à tartiner BANADO Blanc 20KG",
+    name: "Pâte à tartiner BANADO 20KG",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (lactosérum, lait écrémé et entier), sel. Additifs alimentaires : émulsifiants (SIN322 lécithine de soja, SIN476), arôme artificiel (vanilline).",
     image: "/products/BANADO/20kg.png",
     type: "PATE A TARTINER",

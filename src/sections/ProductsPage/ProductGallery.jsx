@@ -34,7 +34,7 @@ export default function ProductGallery({ products }) {
     DOYDOY: "#1C86C8",
   };
 
-  const scale = ["scale-50", "scale-75", "scale-100"];
+  const scale = ["scale-50", "scale-75", "scale-100", "scale-125"];
 
   const [selectedType, setSelectedType] = useState(null);
 

@@ -63,7 +63,7 @@ const products = [
     name: "Bâtonnets de chocolat OPTILLA - 60 unités",
     description: "Ingrédients : Sucre, matières grasses végétales, poudre (cacao, lactosérum et lait entier), pâte de noisettes, sel. Additifs alimentaires : émulsifiant (E322 lécithine de soja), arômes artificiels (noisette, vanilline).",
     image: "/products/OPTILLA/STICKS/STICKS 60UNITS _trimmed.png",
-    type: "PATE A TARTINER",
+    type: "STICKS",
     brand: "OPTILLA"
   },
   {
@@ -71,7 +71,7 @@ const products = [
     name: "Bâtonnets de chocolat noisette OPTILLA - 60 unités",
     description: "Ingrédients : Sucre, matières grasses végétales, poudre (cacao, lactosérum et lait entier), pâte de noisettes, sel. Additifs alimentaires : émulsifiant (E322 lécithine de soja), arômes artificiels (noisette, vanilline).",
     image: "/products/OPTILLA/STICKS/STICKS 60UNITS NOISETTE.png",
-    type: "PATE A TARTINER",
+    type: "STICKS",
     brand: "OPTILLA"
   },
   {
@@ -79,7 +79,7 @@ const products = [
     name: "Bâtonnets de chocolat OPTILLA - 100 unités",
     description: "Ingrédients : Sucre, matières grasses végétales, poudre (cacao, lactosérum et lait entier), pâte de noisettes, sel. Additifs alimentaires : émulsifiant (E322 lécithine de soja), arômes artificiels (noisette, vanilline).",
     image: "/products/OPTILLA/STICKS/STICKS 100 UNITS_trimmed.png",
-    type: "PATE A TARTINER",
+    type: "STICKS",
     brand: "OPTILLA"
   },
 
@@ -222,7 +222,8 @@ const products = [
     description: "Ingrédients : Sirop de glucose, sucre, eau, poudre de lait entier, matières grasses végétales non hydrogénées, sel. Additifs alimentaires : émulsifiant (lécithine de soja E322), conservateur (sorbate de potassium E202), arôme artificiel, épaississant (gomme xanthane E415), acidifiant (acide citrique E330).",
     image: "/products/OPTILLA/CARAMEL 500G_trimmed.png",
     type: "CARAMEL",
-    brand: "OPTILLA"
+    brand: "OPTILLA",
+    size: 1
   },
   {
     id: "optilla-caramel-2kg",
@@ -230,7 +231,8 @@ const products = [
     description: "Ingrédients : Sirop de glucose, sucre, eau, poudre de lait entier, matières grasses végétales non hydrogénées, sel. Additifs alimentaires : émulsifiant (lécithine de soja E322), conservateur (sorbate de potassium E202), arôme artificiel, épaississant (gomme xanthane E415), acidifiant (acide citrique E330).",
     image: "/products/OPTILLA/CARAMEL 2KG.png",
     type: "CARAMEL",
-    brand: "OPTILLA"
+    brand: "OPTILLA",
+    size: 4
   },
 
 

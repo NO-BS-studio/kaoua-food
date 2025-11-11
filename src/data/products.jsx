@@ -121,6 +121,8 @@ const products = [
     name: "Tablette OPTILLA Chocolat Noir",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre de cacao et de lait écrémé, sel. Additifs alimentaires : SIN322 (émulsifiant), vanille (arôme artificiel).",
     image: "/products/OPTILLA/TABLETTE/ZELLIGE NOIR _trimmed.png",
+    type: "TABLETTES",
+    brand: "OPTILLA"
   },
   {
     id: "optilla-tablette-fraise",
@@ -140,7 +142,7 @@ const products = [
   },
   {
     id: "optilla-tablette-choco",
-    name: "Tablette OPTILLA Orange",
+    name: "Tablette OPTILLA Chocolat",
     description: "Ingrédients : Pâte Végécao : Sucre, matières grasses végétales hydrogénées, poudre de cacao, poudre de lait entier, poudre de lait écrémé, poudre de lactosérum, sel. Additifs alimentaires : SIN322 (émulsifiant), vanille (arôme artificiel). Crème orange : Additifs alimentaires : arôme artificiel (orange), SIN330 (régulateur d'acidité), SIN110 (colorant alimentaire).",
     image: "/products/OPTILLA/TABLETTE/choco_trimmed.png",
     type: "TABLETTES",
@@ -208,9 +210,33 @@ const products = [
   },
   {
     id: "optilla-double-twist-vanille",
-    name: "Bonbons OPTILLA Double Twist Cerise",
+    name: "Bonbons OPTILLA Double Twist Vanille",
     description: "Ingrédients : Pâte Vegecao : Sucre, matières grasses végétales hydrogénées, poudre (cacao, lait entier, lait écrémé, lactosérum), sel. Additifs alimentaires : SIN322 (émulsifiant), vanilline (arôme artificiel). Crème : SIN 270 (régulateur d'acidité), arôme artificiel (cerise), (SIN124, 151) colorants alimentaires.",
     image: "/products/OPTILLA/DOUBLE TWIST BONBONS/Snack Bag OPTELLA Vanille_trimmed.png",
+    type: "CONFISERIE",
+    brand: "OPTILLA"
+  },
+  {
+    id: "optilla-double-twist-caramel",
+    name: "Bonbons OPTILLA Double Twist Caramel",
+    description: "Ingrédients : Pâte Vegecao : Sucre, matières grasses végétales hydrogénées, poudre (cacao, lait entier, lait écrémé, lactosérum), sel. Additifs alimentaires : SIN322 (émulsifiant), vanilline (arôme artificiel). Crème : SIN 270 (régulateur d'acidité), arôme artificiel (cerise), (SIN124, 151) colorants alimentaires.",
+    image: "/products/OPTILLA/DOUBLE TWIST BONBONS/Snack Bag OPTELLA caramel-min.png",
+    type: "CONFISERIE",
+    brand: "OPTILLA"
+  },
+  {
+    id: "optilla-souple",
+    name: "Bonbons OPTILLA Bonbons Souples",
+    description: "Ingrédients : Pâte Vegecao : Sucre, matières grasses végétales hydrogénées, poudre (cacao, lait entier, lait écrémé, lactosérum), sel. Additifs alimentaires : SIN322 (émulsifiant), vanilline (arôme artificiel). Crème : SIN 270 (régulateur d'acidité), arôme artificiel (cerise), (SIN124, 151) colorants alimentaires.",
+    image: "/products/OPTILLA/DOUBLE TWIST BONBONS/souple 22-min.png",
+    type: "CONFISERIE",
+    brand: "OPTILLA"
+  },
+  {
+    id: "optilla-tendres",
+    name: "Bonbons OPTILLA Bonbons Tendres",
+    description: "Ingrédients : Pâte Vegecao : Sucre, matières grasses végétales hydrogénées, poudre (cacao, lait entier, lait écrémé, lactosérum), sel. Additifs alimentaires : SIN322 (émulsifiant), vanilline (arôme artificiel). Crème : SIN 270 (régulateur d'acidité), arôme artificiel (cerise), (SIN124, 151) colorants alimentaires.",
+    image: "/products/OPTILLA/DOUBLE TWIST BONBONS/tendres-min.png",
     type: "CONFISERIE",
     brand: "OPTILLA"
   },
@@ -463,7 +489,7 @@ const products = [
   },
   {
     id: "henina-caramel",
-    name: "Végécao fourré HENINA Cerise",
+    name: "Végécao fourré HENINA Caramel",
     description: "Ingrédients : Pâte végécao : Sucre, matières grasses végétales hydrogénées, poudre (cacao, lait entier, lait écrémé, lactosérum), sel. Additifs alimentaires : SIN322 (émulsifiant), vanilline (arôme artificiel). Crème : SIN 270 (régulateur d'acidité), arôme artificiel (cerise), (SIN124, 151) colorants alimentaires.",
     image: "/products/HENINA/caramel.png",
     type: "CONFISERIE",
@@ -471,7 +497,7 @@ const products = [
   },
   {
     id: "henina-coco",
-    name: "Végécao fourré HENINA Fraise",
+    name: "Végécao fourré HENINA Cacao",
     description: "Ingrédients : Sucre, matières grasses végétales hydrogénées, poudre (cacao, lait entier, lait écrémé, lactosérum), sel. Additifs alimentaires : SIN322 (émulsifiant), vanilline (arôme artificiel). Crème : SIN270 (correcteur d'acidité), arôme artificiel (fraise), (SIN124 colorant alimentaire).",
     image: "/products/HENINA/coco.png",
     type: "CONFISERIE",
@@ -479,7 +505,7 @@ const products = [
   },
   {
     id: "henina-vanille",
-    name: "Végécao fourré HENINA Orange",
+    name: "Végécao fourré HENINA Vanille",
     description: "Ingrédients : Pâte végécao : Sucre, matières grasses végétales hydrogénées, poudre (cacao, lactosérum et lait), sel. Additifs alimentaires : SIN322 (émulsifiant), vanilline (arôme artificiel). Crème : SIN 270 (régulateur d'acidité), arôme artificiel (orange), (SIN 104-110-124) colorants alimentaires.",
     image: "/products/HENINA/vanille.png",
     type: "CONFISERIE",
@@ -492,6 +518,14 @@ const products = [
     name: "Bonbons mous NAPOLITANO",
     description: "Ingrédients : Sucre, sirop de glucose, matières grasses végétales hydrogénées. Additifs alimentaires : (SIN 322, 471) émulsifiants, SIN 330 (régulateur d'acidité), arômes artificiels, colorants alimentaires selon le goût.",
     image: "/products/NAPOLITANO/Napolitano _trimmed.png",
+    type: "CONFISERIE",
+    brand: "NAPOLITANO"
+  },
+  {
+    id: "napolitano-tutti-frutti",
+    name: "Bonbons mous Tutti Frutti",
+    description: "Ingrédients : Sucre, sirop de glucose, matières grasses végétales hydrogénées. Additifs alimentaires : (SIN 322, 471) émulsifiants, SIN 330 (régulateur d'acidité), arômes artificiels, colorants alimentaires selon le goût.",
+    image: "/products/NAPOLITANO/napolitano 33-min.png",
     type: "CONFISERIE",
     brand: "NAPOLITANO"
   },

@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+font-family: leggib; 
+}
+
+html {
+  /* overflow-x : hidden; */
+  margin: 0, 0, 0, 0;
+}
+body {
+  margin: 0;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@theme {
+  --font-leggib: leggib;
+  --font-noto: noto;
+}
+
+@font-face {
+  font-family: "leggib";
+
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/Leggibilmente-MediumRoman.otf") format("truetype");
+}
+@font-face {
+  font-family: "leggib";
+
+  font-weight: bold;
+  font-style: normal;
+  src: url("/fonts/Leggibilmente-BoldRoman.otf") format("truetype");
+}
+@font-face {
+  font-family: "noto";
+
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/NotoKufiArabic-VariableFont_wght.ttf") format("truetype");
+}
+
+
+/* RTL support: switch direction and default alignment when `dir="rtl"` is set on the document */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  font-family: var(--font-noto), leggib, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Keep form inputs LTR so numbers and certain text remain readable */
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select,
+[dir="rtl"] .num {
+  direction: ltr;
+  text-align: left;
+}

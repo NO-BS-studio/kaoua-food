@@ -1,0 +1,39 @@
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import MetierCards from "../../components/HomePage/MetierCards";
+import { useTranslation } from "react-i18next";
+import { useDraggable } from "react-use-draggable-scroll";
+
+export default function MetierSection() {
+  const { t, i18n } = useTranslation();
+  
+  
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  // `once: true` → runs only first time
+  // `margin` → lets it trigger slightly before fully visible
+
+  return (
+    <section className="w-full  flex flex-col items-center py-[6vw] pb-[10vw]">
+      <div className="flex flex-col items-center px-[15vw]">
+        <h1 className="uppercase md:text-[6vw] text-[10vw] font-extrabold">
+          {t("homePage.section5.title")}
+        </h1>
+        <p className="md:text-[2vw] text-[3vw] text-black/40 text-center">
+          {t("homePage.section5.subtitle")}{" "}
+        </p>
+      </div>
+
+      <div ref={ref} className="w-full   overflow-hidden relative">
+        <motion.div
+          initial={{ opacity: 0, x: "-80vw" }}
+          animate={isInView ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className=" "
+        >
+          <MetierCards />
+        </motion.div>
+      </div>
+    </section>
+  );
+}

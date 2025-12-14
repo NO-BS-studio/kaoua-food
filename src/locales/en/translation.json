@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "accueuil": "HOME",
+    "produits": "PRODUCTS",
+    "carriere": "CARREER",
+    "contact": "CONTACT"
+  },
+  "homePage": {
+    "section1": {
+      "title": "A World\n of Sweetness",
+      "subtitle": "Chocolates & Confectionery, Crafted with Passion",
+      "button": "discover"
+    },
+    "section2": {
+      "title": "Message from the Director",
+      "paragraph": "Kaoua Food is an Algerian company founded in 2011, specialized in the production of agri-food products.\n\nRecognized for its iconic spread Optilla, the brand quickly established itself as a reference in the hearts of Algerian consumers.\n\nBuilding on this success, Kaoua Food expanded its portfolio with a complete range of confectioneries, hard candies, and jellies: combining taste, innovation, and consistent quality.\n\nIn 2024, the company launched a premium range of chocolate and biscuits under the MOON brand, responding to a growing demand for quality products accessible to a wide audience."
+    },
+    "section3": {
+      "title": "HISTORY",
+      "p1": "An Algerian company founded in 2011, specialized in the production of agri-food products.",
+      "p2": "Kaoua Food is an Algerian company founded in 2011, specialized in the production of agri-food products.\nKnown for its iconic Optilla spread, the brand quickly established itself as a reference in the hearts of Algerian consumers.\n\nBuilding on this success, Kaoua Food expanded its portfolio with a complete range of confectionery, hard candies, and jellies: combining taste, innovation, and consistent quality.\n\nIn 2024, the company launched a premium line of chocolate and biscuits under the MOON brand, meeting the growing demand for quality products accessible to a wide audience.",
+      "origines": "origins of the\nbrand"
+      ,
+      "stats": {
+        "yearsNumber": "14",
+        "yearsLabel": "years",
+        "existence": "of existence"
+      }
+    },
+    "section4": {
+      "title": "OUR\nMISSION",
+      "p1": "To offer our customers and consumers high-quality chocolate, confectionery, and biscuit products, driven by the commitment of a passionate team within a responsible company. We are committed to making our products accessible to everyone, including in the most remote areas of our country, acting as a trusted partner in the service of all.",
+      "values": [
+        {
+          "title": "Quality",
+          "content": "We are committed to offering products that combine excellence and taste."
+        },
+        {
+          "title": "Innovation",
+          "content": "Our expertise and our R&D department are fully dedicated to product creation."
+        },
+        {
+          "title": "Proximity",
+          "content": "We place the Algerian consumer at the heart of our strategy."
+        }
+      ],
+      "redcard": {
+        "title": "Our\nvision",
+        "p2": "We aim to make every Kaoua Food product a symbol of trust, innovation, and national pride, enriching consumers’ everyday moments with authenticity and generosity."
+      },
+      "badge": "VALUES",
+      "orangecard": {
+        "title": "our\nvalues",
+        "p2": "Our core values guide our decisions, our behavior, and our long-term development:\n· Customer orientation\n· Employee commitment\n· Sustainable performance\n· Corporate citizenship\n· Compliance with international standards"
+      },
+
+      "engagements": [
+        {
+          "title": "Manufacturing Process",
+          "paragraph": "Our factories are equipped with specialized production lines for spreads, biscuits, and confectionery. Every step, from the selection of raw materials to packaging, is precisely controlled. Our process is designed to combine industrial efficiency with gourmet excellence."
+        },
+        {
+          "title": "Innovation & Industrial Expertise",
+          "paragraph": "At Kaoua Food, innovation is at the heart of our industrial approach. Our R&D teams work in synergy with our production units to create tasty and distinctive products. Our modern industrial tools allow us to respond with agility to market changes. This combination of technology, creativity, and rigor is what makes us strong."
+        },
+        {
+          "title": "Quality & ISO 9001 Certification",
+          "paragraph": "Kaoua Food is ISO 9001 certified, a recognition of our quality management system. This certification ensures controlled processes, continuous improvement, and a strong customer focus. It reflects our commitment to providing safe, consistent, and reliable products."
+        },
+        {
+          "title": "Personal Data Protection",
+          "paragraph": "Kaoua Food is committed to strictly complying with Law 18-07 on personal data protection. We handle our clients’, partners’, and employees’ information with transparency and responsibility."
+        }
+      ]
+    },
+    "certification": "DOWNLOAD THE CERTIFICATE",
+
+    "section5": {
+      "title": "Careers",
+      "subtitle": "Discover exciting job opportunities at our facilities."
+    }
+  },
+
+  "contact": {
+    "title": "Contact",
+    "description": "Got a question about our products or just want to say hello? We'd love to hear from you! Reach out to our friendly customer service team via phone, email, or the contact form.",
+    "form": "Contact form",
+    "envoyer": "SEND",
+    "address_label": "Address",
+    "address": "Domaine Halimi propriété N°260 lot 193 Section 03 local B, Hamadi W.Boumerdes – Algeria",
+    "service": "CUSTOMER\nSERVICE",
+    "placeholders": {
+      "name": "Name and Surname",
+      "company": "Company",
+      "phone": "Phone",
+      "message": "Message"
+    }
+  },
+  "catalogue": {
+    "title": "OUR\nCATALOGUE",
+    "subtitle": "download our products pdf catalogue",
+    "button": "DOWNLOAD THE CATALOGUE"
+  },
+
+  "vedettes": "OUR STARS",
+
+  "nosProduits": "OUR PRODUCTS",
+
+  "marques": "OUR BRANDS"
+  ,
+  "footer": {
+    "brand": "KAOUAFOOD",
+    "address": "Address: Domaine Halimi propriété N°260 lot 193 Section 03 local B, Hamadi W.Boumerdes – Algeria",
+    "contact_title": "Contact",
+    "tel_label": "tel.",
+    "phone1": "0560 04 05 37",
+    "phone2": "0562 67 80 06",
+    "mail_label": "mail.",
+    "email": "contact@kaouafood.dz",
+    "legal_title": "Legal Notice",
+    "copyright": "cc © 2025 Kaouafood",
+    "subinfo": "moon.inc\npowered by NO BS Studio",
+    "navigation_title": "Navigation",
+    "nav_home": "Home",
+    "nav_products": "Products",
+    "nav_career": "Career",
+    "nav_contact": "Contact",
+    "socials_title": "Socials",
+    "map_alt": "Map",
+    "mobile_map_alt": "Map"
+  }
+}

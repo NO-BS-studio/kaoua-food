@@ -68,7 +68,7 @@ function HistoryPanel() {
       {/* Row 1 + 2: Big Image - FIRST on mobile, stays in place on desktop */}
       <div className="md:row-span-2 col-span-2  h-full w-full order-5 md:order-none">
         <img
-          src="/mosaic/Rectangle 48.png"
+          src="/mosaic/13.jpg"
           alt="production"
           className="w-full h-full object-cover rounded-xl"
         />
@@ -98,7 +98,7 @@ function HistoryPanel() {
         <div className="uppercase whitespace-pre absolute bg-orange-400 bottom-[1vw] left-[-4vw] py-[0.5vw] pl-[1.5vw] pr-[3vw] rounded-xl text-white text-[1vw] font-bold leading-none rotate-3">
           {t("homePage.section3.origines")}
         </div>
-        <p className="md:text-[2vw] text-[2.5vw] leading-none pl-[25%] md:py-[2vw] whitespace-pre-wrap">
+        <p className="md:text-[2vw] text-[2.5vw] leading-none rtl:leading-tight pl-[25%] md:py-[2vw] whitespace-pre-wrap">
           {t("homePage.section3.p2")}
         </p>
       </div>
@@ -124,7 +124,7 @@ export default function HistorySection() {
 
   return (
     <div
-      className="relative w-full gap-[5vw]  flex flex-col items-center justify-center md:px-[15vw] px-[10vw] py-[5vw] text-black/40 md:cursor-pointer"
+      className="relative w-full gap-[5vw]  flex flex-col items-center justify-center md:px-[15vw] px-[10vw] py-[5vw] text-black/40"
       // onClick={handleSwitch}
     >
       <AnimatePresence mode="wait">

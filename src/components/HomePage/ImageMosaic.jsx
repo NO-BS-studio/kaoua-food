@@ -27,13 +27,13 @@ const itemVariants = {
 const imagesLayout = [
   // 1st column (3 images)
   [
-    "/mosaic/Rectangle 42.png",
+    "/mosaic/9.jpg",
     "/mosaic/Rectangle 43.png",
-    "/mosaic/Rectangle 48.png",
+    "/mosaic/10.jpg",
   ],
 
   // 2nd column (2 images)
-  ["/mosaic/Rectangle 50.png", "/mosaic/Rectangle 51.png"],
+  ["/mosaic/15.jpg", "/mosaic/7.jpg"],
 
   // 3rd column (1 image)
   ["/slides/Asset 2@2x.png"],
@@ -45,13 +45,13 @@ const imagesLayout = [
   ["/mosaic/Rectangle 55.png"],
 
   // 6th column (1 image)
-  ["/mosaic/Rectangle 56.png"],
+  ["/mosaic/13.jpg"],
 
   // 7th column (1 image)
-  ["/mosaic/Rectangle 57.png"],
+  ["/mosaic/8.jpg"],
 
   // 8th column (2 images)
-  ["/mosaic/Rectangle 58.png", "/mosaic/Rectangle 60.png"],
+  ["/mosaic/2.jpg", "/mosaic/1.jpg"],
 
   // 9th column (3 images)
   [

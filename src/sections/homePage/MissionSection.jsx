@@ -60,18 +60,18 @@ export default function MissionSection() {
 
         {/* Vision (bottom full width) */}
         <div className="col-span-3 bg-[#d91f37] text-white rounded-xl mt-[3vw] flex flex-col md:flex-row justify-between items-center p-[2vw] gap-[2vw]">
-          <p className="md:text-[2vw] text-[3vw] font-extralight leading-none md:max-w-[70%] p-[1vw]">
+          <p className="md:text-[2vw] text-[3vw] font-extralight leading-none md:max-w-[70%] p-[1vw] rtl:leading-tight">
             {t("homePage.section4.redcard.p2")}
           </p>
           <h2 className="text-[5vw] uppercase whitespace-pre md:flex hidden  font-extrabold text-white leading-none">
             {t("homePage.section4.redcard.title")}
           </h2>
         </div>
-        <div className="col-span-3 bg-[#FF7612] whitespace-pre-wrap text-white rounded-xl mt-[3vw] flex flex-col md:flex-row justify-between items-center p-[2vw] gap-[2vw]">
-          <p className="md:text-[2vw] text-[3vw] font-extralight leading-none md:max-w-[70%] p-[1vw]">
+        <div className="col-span-3 bg-[#FF7612] whitespace-pre-wrap text-white rounded-xl mt-[3vw] flex flex-col md:flex-row justify-between items-center p-[2vw] gap-[2vw] ">
+          <p className="md:text-[2vw] text-[3vw] font-extralight leading-none md:max-w-[70%] p-[1vw] rtl:leading-tight">
             {t("homePage.section4.orangecard.p2")}
           </p>
-          <h2 className="text-[5vw] uppercase whitespace-pre md:flex hidden  font-extrabold text-white leading-none">
+          <h2 className="text-[5vw] uppercase whitespace-pre md:flex hidden  font-extrabold text-white leading-none rtl:leading-tight">
             {t("homePage.section4.orangecard.title")}
           </h2>
         </div>

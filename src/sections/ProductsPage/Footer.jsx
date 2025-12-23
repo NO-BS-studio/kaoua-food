@@ -2,10 +2,12 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
+  FaPhoneAlt,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -42,8 +44,8 @@ export default function Footer() {
               <h3 className="font-bold text-white md:text-[1.4vw] mb-1">
                 {t("footer.contact_title")}
               </h3>
-              <p >
-                {t("footer.tel_label")}
+              <p>
+                <FaPhoneAlt className="" />
                 <div className="num w-fit">
                   {t("footer.phone1")}
                   <br />
@@ -51,8 +53,8 @@ export default function Footer() {
                 </div>
               </p>
               <p className="mt-2">
-                {t("footer.mail_label")}
-                <br />
+                <FaEnvelope className="" />
+
                 <a href={`mailto:${t("footer.email")}`} className="underline">
                   {t("footer.email")}
                 </a>
@@ -96,11 +98,6 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="/carriere" className="hover:underline">
-                    {t("footer.nav_career")}
-                  </a>
-                </li>
-                <li>
                   <a href="/contact" className="hover:underline">
                     {t("footer.nav_contact")}
                   </a>
@@ -110,23 +107,56 @@ export default function Footer() {
 
             <div className="mt-4">
               <h3 className="font-bold mb-2 md:text-[1.4vw]">
-                {t("footer.socials_title")}
+                {t("footer.socials_title")} OPTILLA
               </h3>
               <div className="flex gap-3 text-xl">
-                <a href="#">
+                <a
+                  href="https://www.facebook.com/Chocolat.Optilla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaFacebook />
                 </a>
-                <a href="#">
+                <a
+                  href="https://www.instagram.com/optilla.chocolat/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaInstagram />
                 </a>
-                <a href="#">
-                  <FaTwitter />
-                </a>
-                <a href="#">
+                <a
+                  href="https://www.youtube.com/@chocolatoptilla11372"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaYoutube />
                 </a>
-                <a href="#">
+                <a
+                  href="linkedin.com/company/optilla1/?originalSubdomain=dz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLinkedin />
+                </a>
+              </div>
+              <div className="h-8"></div>
+              <h3 className="font-bold mb-2 md:text-[1.4vw]">
+                {t("footer.socials_title")} MOON
+              </h3>
+              <div className="flex gap-3 text-xl">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61567385692891"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="https://www.instagram.com/moon_chocolat_algerie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram />
                 </a>
               </div>
             </div>

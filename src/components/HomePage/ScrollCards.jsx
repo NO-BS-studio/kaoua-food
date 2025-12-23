@@ -12,21 +12,21 @@ export default function ScrollCards() {
   const cards = [
     {
       id: 1,
-      image: "/mosaic/Rectangle 57.png",
+      image: "/mosaic/1.jpg",
       title: t("homePage.section4.engagements.0.title"),
       badge: "KAOUAFOOD USINE",
       description: t("homePage.section4.engagements.0.paragraph"),
     },
     {
       id: 2,
-      image: "/mosaic/Rectangle 42.png",
+      image: "/mosaic/13.jpg",
       title: t("homePage.section4.engagements.1.title"),
       badge: "QUALITÉ",
       description: t("homePage.section4.engagements.1.paragraph"),
     },
     {
       id: 3,
-      image: "/mosaic/Rectangle 53.png",
+      image: "/mosaic/7.jpg",
       title: t("homePage.section4.engagements.2.title"),
       // badge: "R&D",
       description: t("homePage.section4.engagements.2.paragraph"),
@@ -36,7 +36,7 @@ export default function ScrollCards() {
     },
     {
       id: 4,
-      image: "/mosaic/Rectangle 52.png",
+      image: "/mosaic/5.jpg",
       title: t("homePage.section4.engagements.3.title"),
       // badge: "R&D",
       description: t("homePage.section4.engagements.3.paragraph"),

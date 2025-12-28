@@ -57,7 +57,7 @@ export function FlagButton({ code }) {
 
   return (
     <button
-      className="w-[2vw] h-[2vw] flex items-center justify-center rounded-full border-2 border-black/80 text-black/80 text-[0.8vw] font-gmrkB uppercase bg-[#D9D9D9]/15 hover:bg-transparent transition"
+      className="w-[2vw] h-[2vw] flex items-center justify-center cursor-pointer rounded-full border-2 border-black/80 text-black/80 text-[0.8vw] font-gmrkB uppercase bg-[#D9D9D9]/15 hover:bg-transparent transition"
       title={code.toUpperCase()}
       onClick={() => i18n.changeLanguage(code)}
     >

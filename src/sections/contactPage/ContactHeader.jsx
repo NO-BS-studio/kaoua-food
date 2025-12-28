@@ -39,9 +39,9 @@ export default function ContactHeader() {
 
           <div className="grid items-center grid-rows-3 grid-cols-[10%_auto] mx-[5%] gap-[2vw] md:text-[2vw] text-[4vw] my-[5vw] md:my-0">
             <FaPhoneAlt className="" />
-            <span className="flex w-full justify-center num">0560 04 05 37</span>
+            <span className="flex w-full justify-center num">0560 28 27 38</span>
             <FaPhoneAlt className="" />
-            <span className="flex w-full justify-center num">0562 67 80 06</span>
+            <span className="flex w-full justify-center num">0561 67 80 06</span>
 
             <FaEnvelope className="" />
             <span className="flex w-full justify-center">

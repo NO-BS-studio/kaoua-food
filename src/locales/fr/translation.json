@@ -1,6 +1,6 @@
 {
   "nav": {
-    "accueuil": "ACCUEUIL",
+    "accueuil": "ACCEUIL",
     "produits": "PRODUITS",
     "carriere": "CARRIERE",
     "contact": "CONTACT"
@@ -120,7 +120,7 @@
     "copyright": "cc © 2025 Kaouafood",
     "subinfo": "moon.inc\npowered by NO BS Studio",
     "navigation_title": "Navigation",
-    "nav_home": "Accueuil",
+    "nav_home": "Acceuil",
     "nav_products": "Produits",
     "nav_career": "Carriere",
     "nav_contact": "Contact",

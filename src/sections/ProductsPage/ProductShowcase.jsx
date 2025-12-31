@@ -172,11 +172,11 @@ export default function ProductShowcase({ onBrandSelect }) {
         <Navbar />
 
         <div
-          className="flex-grow flex md:flex-row flex-col items-center justify-between gap-16 md:h-[30vw] h-[180vw]"
+          className="flex-grow flex md:flex-row flex-col items-center justify-between gap-16 md:h-[35vw] "
           onClick={handleNextProduct}
         >
           {/* Text Block */}
-          <div className="max-w-xl md:w-[40%] w-full space-y-6 text-white">
+          <div className="max-w-x md:w-[40%] w-full space-y-6 text-white">
             <motion.h1
               key={current.name + "-title"}
               className="text-[5vw] leading-none font-bold"
@@ -215,7 +215,7 @@ export default function ProductShowcase({ onBrandSelect }) {
           </div>
 
           {/* Product Image (cycled) */}
-          <div className="md:w-[60%] w-full md:h-full h-[30vh] relative ">
+          <div className="md:w-[60%] w-full md:h-full h-[70vw] relative ">
             <AnimatePresence mode="sync">
               <motion.img
                 key={current.images[imageIndex]} // ✅ cycle images

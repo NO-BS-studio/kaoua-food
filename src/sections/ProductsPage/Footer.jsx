@@ -125,14 +125,14 @@ export default function Footer() {
                   <FaInstagram />
                 </a>
                 <a
-                  href="https://www.youtube.com/@chocolatoptilla11372"
+                  href="https://www.youtube.com/@chocolatoptilla1137"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FaYoutube />
                 </a>
                 <a
-                  href="linkedin.com/company/optilla1/?originalSubdomain=dz"
+                  href="https://www.linkedin.com/company/optilla1/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
